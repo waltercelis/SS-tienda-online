@@ -1,0 +1,540 @@
+/* HOME-INDEX */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "section2"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 650px 400px 450px 50px;
+}
+
+
+
+.header {
+    grid-area: header;
+    background-color: rgb(213, 144, 15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+.header .header__icono {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.header .header__nav__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+}
+.header .header__nav__ul li {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+.header .header__nav__ul a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+.header .header__nav__ul a:hover {
+    color: white;
+}
+.header .header__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header .header__ul li {
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+.header .header__ul li a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 30px;
+}
+.header .header__ul li a:hover {
+    color: white;
+}
+.header .header__ul .active {
+    color: white;
+}
+.header .header__nav__ul .active {
+    color: white;
+}
+
+
+
+main {
+    grid-area: main;
+    background-color: white;
+    background-image: url(../img/homeInicio.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main__contenedor__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.main__boxmodel {
+    text-align: center;
+    color: black;
+}
+.main__boxmodel h2 {
+    font-family: 'Nuosu SIL', serif;
+    font-size: 77px;
+}
+.main__boxmodel p {
+    font-family: 'Josefin Sans', sans-serif;
+    /* color: rgb(213, 144, 15); */
+    font-size: 27px;
+}
+.main__boton {
+    text-align: center;
+    margin-top: 9px;
+}
+.main__boton a {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 2PX;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.main__boton a:hover {
+    border: 1px solid black;
+}
+
+
+
+.section {
+    grid-area: section;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__img {
+    display: flex;
+    justify-content: space-between;
+    min-width: 150px;
+    min-height: 150px;
+}
+.section__img li:hover {
+    border: 1px solid #777;
+}
+.section__img :first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__img :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__img :nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section__img li {
+    display: inline;
+    margin: 25px;
+}
+
+
+
+.section2 {
+    grid-area: section2;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+.section__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.section__boxmodel2 {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 315px;
+    padding: 30px;
+}
+.section__boxmodel2 ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section__boxmodel2 ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.section__video {
+    display: flex;
+    flex-direction: row;
+}
+.section__video iframe {
+    padding: 30px;
+}
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: #363738;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer .footer__contactenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.footer .footer__contactenos ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+.footer .footer__contactenos li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer .footer__contactenos a {
+   text-decoration: none;
+   color: #d3d7da;
+}
+.footer .footer__contactenos a:hover {
+    color: white;
+}
+.footer .footer__contacto__a {
+    width: 23px;
+    height: auto;
+}
+.footer .footer__contacto__a:hover {
+    width: 26px;
+    transition: all .03s;
+}
+
+
+/* SOBRENOSOTROS */
+.grid-container__sobrenosotros {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section__nosotros"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.grid__contenedor__sobrenosotros {
+    grid-area: section__nosotros;
+}
+
+
+.grid__contenedor__sobrenosotros .section__nosotros {
+    min-height: 200px;
+    padding: 20px;
+}
+.grid__contenedor__sobrenosotros .section__nosotros div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.grid__contenedor__sobrenosotros .section__historia {
+    min-height: 700px;
+    padding: 20px;
+}
+.grid__contenedor__sobrenosotros .section__historia div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.grid__contenedor__sobrenosotros .section__historia div h2 {
+    margin-bottom: 25px;
+}
+
+
+/* UBICACION */
+.grid-container__ubicacion {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section__ubicacion"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.section__ubicacion {
+    grid-area: section__ubicacion;
+    height: 100vh;
+}
+.section__ubicacion div h1{
+    padding: 10px;
+}
+.section__ubicacion div div {
+    padding: 10px;  
+}
+.section__ubicacion div div a {
+    text-decoration: none;
+}
+.section__ubicacion div div a:hover {
+    text-decoration: underline;
+}
+
+
+/* PRODUCTOS */
+.grid-container__producto {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section__producto"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.grid__contenedor__producto {
+    grid-area: section__producto;
+    height: 100%;
+}
+
+
+.grid__contenedor__producto .section__productos__hombre {
+    padding: 20px;
+}
+.grid__contenedor__producto ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+.grid__contenedor__producto ul li:hover {
+    border: 1px solid black;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__zapatillas ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__zapatillas ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__remeras ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__remeras ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__pantalones ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__pantalones ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__accesorios ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__accesorios ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.grid__contenedor__producto .section__productos__mujer {
+    padding: 20px;
+}
+.grid__contenedor__producto ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__zapatillas ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__zapatillas ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__remeras ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__remeras ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__pantalones ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__pantalones ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__accesorios ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    margin: 20px 0;
+}
+.grid__contenedor__producto .section__productos__mujer .section__mujer__accesorios ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* INICIAR SESION */
+.grid-container__sesion {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section__sesion"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.flex-container {
+    grid-area: section__sesion;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form .form__section {
+    margin-bottom: 10px;
+}
+form .button {
+    margin-bottom: 25px;
+}
+form .section__link {
+    margin-bottom: 3px;
+}
+form .section__link a {
+    text-decoration: none;
+}
+form .section__link a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTACTO */
+.grid-container__contacto {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section__contacto"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px auto 50px;
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+}
+
+
+.section__contacto {
+    grid-area: section__contacto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section__contacto .form__section {
+    margin-bottom: 12px;
+}
+.section__contacto .delete {
+    margin-bottom: 25px;
+}
+.section__contacto .enviar {
+    margin-bottom: 25px;
+}
+.section__contacto .info {
+    margin-top: 50px;
+}

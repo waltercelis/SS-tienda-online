@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Iniciar sesión</title>
+    <link rel="shortcut icon" href="../img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <div class="grid-container__sesion">
+
+        <!-- header -->
+        <header class="header">
+            <div class="header__icono">
+                <a href="../index.html"><img src="../img/icono.png" alt="" width="65px"></a>
+            </div>
+            <nav>
+                <ul class="header__nav__ul">
+                    <li><a href="../paginas/producto.html">PRODUCTOS</a></li>
+                    <li><a href="../paginas/ubicacion.html">UBICACIÓN</a></li>
+                    <li><a href="../paginas/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="../paginas/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <ul class="header__ul">
+                <li><a class="active" href="../paginas/sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </header>
+
+        <!-- section -->
+        <section class="flex-container">
+            <h1 class="animate__animated animate__fadeInLeft">Inicie sesión en la cuenta de SS tienda online</h1>
+            <form action="form">
+                <div class="form__section">
+                    <label for="email">Email
+                        <input type="email" placeholder="a@gmail.com" name="email">
+                    </label>
+                </div>
+                <div class="form__section">
+                    <label for="pass">Contraseña
+                        <input type="password" id="pass" placeholder="Ingrese contraseña">
+                    </label>
+                </div>
+                <div>
+                    <input class="button" type="submit" value="Iniciar sesión">
+                    <input class="delete" type="reset" value="Delete">
+                </div>
+                <div class="section__link">
+                    <a href="#">¿Olvidaste la contraseña?</a>
+                </div>
+                <div class="section__link">
+                    <a href="#">Registrate ahora</a>
+                </div>
+            </form>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__contactenos">
+                <ul>
+                    <div>
+                        <li><a class="footer__contacto__a" href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt=""></a></li>
+                    </div>
+                    <div>
+                        <li><a class="footer__contacto__a" href="https://telegram.org/" target="_blank"><img src="../img/telegram.png" alt=""></a></li>
+                    </div>
+                    <div>
+                        <li><a class="footer__contacto__a" href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt=""></a></li>
+                    </div>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

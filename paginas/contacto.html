@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+	<title>Contacto</title>
+    <link rel="shortcut icon" href="../img/icono.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+	<div class="grid-container__contacto">
+
+		<!-- header -->
+		<header class="header">
+            <div class="header__icono">
+                <a href="../index.html"><img src="../img/icono.png" alt="" width="65px"></a>
+            </div>
+            <nav>
+                <ul class="header__nav__ul">
+                    <li><a href="../paginas/producto.html">PRODUCTOS</a></li>
+                    <li><a href="../paginas/ubicacion.html">UBICACIÓN</a></li>
+                    <li><a href="../paginas/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+					<li><a class="active" href="../paginas/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <ul class="header__ul">
+                <li><a href="../paginas/sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </header>
+
+		<!-- section -->
+		<section class="section__contacto">
+			<h1 class="animate__animated animate__fadeInLeft">Contacte a SS tienda online</h1>
+			<article class="boxmodel">
+				<form class="form">
+					<img src="https://cdn-icons-png.flaticon.com/512/95/95645.png" width="300px">
+					<div class="form__section">
+						<label for="nombre">Nombre
+							<input type="text" id="nombre" placeholder="Nombre y apellido">
+						</label>
+					</div>
+					<div class="form__section">
+						<label for="email">Email
+							<input type="email" placeholder="a@gmail.com" name="email">
+						</label>
+					</div>
+					<div class="form__section">
+						<label for="Mensaje"> Mensaje
+							<textarea placeholder="Escribe el asunto"></textarea>
+						</label>
+					</div>
+					<div class="info">Recibir más información sobre nosotros
+					<input type="checkbox" name="acepta" value="1"></div>
+					<div class="form__section">
+						<input class="enviar" type="submit">
+						<input class="delete" type="reset" value="Delete">
+					</div>
+				</form>
+			</article>
+		</section>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer__contactenos">
+                <ul>
+                    <div>
+                        <li><a class="footer__contacto__a" href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt=""></a></li>
+                    </div>
+                    <div>
+                        <li><a class="footer__contacto__a" href="https://telegram.org/" target="_blank"><img src="../img/telegram.png" alt=""></a></li>
+                    </div>
+                    <div>
+                        <li><a class="footer__contacto__a" href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt=""></a></li>
+                    </div>
+                </ul>
+            </div>
+        </footer>
+	</div>
+</body>
+</html>
