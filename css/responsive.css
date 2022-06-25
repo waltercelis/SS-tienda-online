@@ -316,14 +316,14 @@
     /* UBICACION */
     .grid-container__ubicacion {
         grid-template-rows: auto auto auto;
-        font-size: 8px;
+        font-size: 9px;
     }
 
 
     /* SOBRENOSOTROS */
     .grid-container__sobrenosotros {
         grid-template-rows: auto auto auto;
-        font-size: 8px;
+        font-size: 9px;
     }
 
 
