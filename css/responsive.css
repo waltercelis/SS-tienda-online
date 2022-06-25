@@ -25,9 +25,9 @@
     }
 
     .footer .footer__contactenos img {
-        width: 19px;
+        width: 24px;
         height: auto;
-        margin: 8px 0;
+        margin: 5px 0;
     }
 }
 
@@ -51,8 +51,8 @@
         font-size: 8px;
     }
     .header .header__icono {
-        width: 32.5px;
-        margin: 5px;
+        width: 40px;
+        margin: 8px;
     }
 
     .main__contenedor__texto {
@@ -135,9 +135,9 @@
         gap: 15px;
     }
     .footer .footer__contactenos img {
-        width: 15px;
+        width: 22px;
         height: auto;
-        margin: 5px 0;
+        margin: 6px 0;
     }
     
 
@@ -205,8 +205,8 @@
         font-size: 7px;
     }
     .header .header__icono {
-        width: 18px;
-        margin: 5px;
+        width: 28px;
+        margin: 7px;
     }
 
     .main__contenedor__texto {
@@ -289,9 +289,9 @@
         gap: 13px;
     }
     .footer .footer__contactenos img {
-        width: 12px;
+        width: 18px;
         height: auto;
-        margin: 4px 0;
+        margin: 6px 0;
     }
     
 

@@ -8,7 +8,7 @@
     "section2"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 650px 400px 450px 50px;
+    grid-template-rows: 90px 650px 400px 450px 55px;
 }
 
 
@@ -244,11 +244,12 @@ main {
     color: white;
 }
 .footer .footer__contacto__a {
-    width: 23px;
+    width: 26px;
     height: auto;
+    margin: 6px 0;
 }
 .footer .footer__contacto__a:hover {
-    width: 26px;
+    width: 28px;
     transition: all .03s;
 }
 
