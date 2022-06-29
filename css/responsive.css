@@ -36,12 +36,22 @@
         font-size: 13px;
     }
 
+
+    .header nav {
+        width: 100%;
+        margin: 0 20px !important;
+    }
     .header .header__icono {
         width: 45px;
-        /* margin-left: -20px; */
     }
-    .header .header__button {
-        margin-right: -15px;
+    .header .navbar .header__ul {
+        padding-top: 20px !important;
+        padding-left: 0 !important;
+        padding-bottom: 10px !important;
+    }
+    .header .navbar form {
+        width: 100%;
+        padding: 0 !important;
     }
 
     .main__contenedor__texto {
@@ -134,7 +144,7 @@
     /* CONTACTO */
     .grid-container__contacto {
         grid-template-rows: auto auto auto;
-        font-size: 12px;
+        font-size: 13px;
     }
     .section__contacto .boxmodel .form img {
         width: 190px;
@@ -144,27 +154,28 @@
     /* INICIAR SESION */
     .grid-container__sesion {
         grid-template-rows: auto auto auto;
-        font-size: 12px;
+        font-size: 13px;
     }
 
 
     /* UBICACION */
     .grid-container__ubicacion {
         grid-template-rows: auto auto auto;
-        font-size: 11px;
+        font-size: 13px;
     }
 
 
     /* SOBRENOSOTROS */
     .grid-container__sobrenosotros {
         grid-template-rows: auto auto auto;
-        font-size: 11px;
+        font-size: 13px;
     }
 
 
     /* PRODUCTO */
     .grid-container__producto {
         grid-template-rows: auto auto auto;
+        font-size: 13px;
     }
     .grid__contenedor__producto ul li a {
         width: 150px;
@@ -176,21 +187,31 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     /* HOME-INDEX */
     .grid-container {
         grid-template-rows: auto 380px auto auto auto;
-        font-size: 10px;
+        font-size: 11px;
     }
 
 
+    .header nav {
+        width: 100%;
+        margin: 0 20px !important;
+    }
     .header .header__icono {
         width: 45px;
-        /* margin-left: -25px; */
     }
-    .header .header__button {
-        margin-right: -20px;
+    .header .navbar .header__ul {
+        padding-top: 20px !important;
+        padding-left: 0 !important;
+        padding-bottom: 10px !important;
     }
+    .header .navbar form {
+        width: 100%;
+        padding: 0 !important;
+    }
+
 
     .main__contenedor__texto {
         display: flex;
@@ -288,7 +309,7 @@
     /* CONTACTO */
     .grid-container__contacto {
         grid-template-rows: auto auto auto;
-        font-size: 10px;
+        font-size: 11px;
     }
     .section__contacto .boxmodel .form img {
         width: 130px;
@@ -298,28 +319,28 @@
     /* INICIAR SESION */
     .grid-container__sesion {
         grid-template-rows: auto auto auto;
-        font-size: 10px;
+        font-size: 11px;
     }
 
 
     /* UBICACION */
     .grid-container__ubicacion {
         grid-template-rows: auto auto auto;
-        font-size: 10px;
+        font-size: 11px;
     }
 
 
     /* SOBRENOSOTROS */
     .grid-container__sobrenosotros {
         grid-template-rows: auto auto auto;
-        font-size: 10px;
+        font-size: 11px;
     }
 
 
     /* PRODUCTO */
     .grid-container__producto {
         grid-template-rows: auto auto auto;
-        font-size: 10px;
+        font-size: 11px;
     }
     .grid__contenedor__producto ul li a {
         width: 130px;
