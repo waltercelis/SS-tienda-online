@@ -29,7 +29,7 @@
 
 
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 992px) {
     /* HOME-INDEX */
     .grid-container {
         grid-template-rows: auto 380px auto auto auto;
@@ -38,6 +38,10 @@
 
     .header .header__icono {
         width: 45px;
+        margin-left: -20px;
+    }
+    .header .header__button {
+        margin-right: -20px;
     }
 
     .main__contenedor__texto {
@@ -182,8 +186,11 @@
 
     .header .header__icono {
         width: 45px;
+        margin-left: -25px;
     }
-
+    .header .header__button {
+        margin-right: -25px;
+    }
 
     .main__contenedor__texto {
         display: flex;
