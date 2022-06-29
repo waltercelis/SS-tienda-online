@@ -9,6 +9,7 @@
     "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto 650px 400px 450px 55px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -170,6 +171,12 @@ main {
     text-decoration: none;
     list-style: none;
 }
+.section__boxmodel2 ul li h3 {
+    font-size: 21px;
+}
+.section__boxmodel2 .section__boxmodel2__p {
+    font-size: 15px;
+}
 .section__video {
     display: flex;
     flex-direction: row;
@@ -289,9 +296,13 @@ main {
 }
 .section__ubicacion div div a {
     text-decoration: none;
+    color: #1a0dab;
 }
 .section__ubicacion div div a:hover {
     text-decoration: underline;
+}
+.section__ubicacion div div a:visited {
+    color: #681da8;
 }
 
 
@@ -504,9 +515,3 @@ form .section__input input:hover {
     background-color: rgba(213, 144, 15, .88);
     color: black;
 }
-/* .section__contacto .form__section {
-    margin-bottom: 12px;
-} */
-/* .section__contacto .info {
-    margin-top: 50px;
-} */
