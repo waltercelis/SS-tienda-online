@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 	<title>SS tienda online</title>
 </head>
 <body>
@@ -21,29 +22,54 @@
 
         <!-- header -->
         <header class="header">
-            <div class="header__icono">
-                <a href="index.html"><img src="./img/icono.png" alt="basquet" width="65px"></a>
-            </div>
-            <nav class="nav">
-                <ul class="header__nav__ul">
-                    <li><a href="paginas/producto.html">PRODUCTOS</a></li>
-                    <li><a href="paginas/ubicacion.html">UBICACIÓN</a></li>
-                    <li><a href="paginas/sobrenosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="paginas/contacto.html">CONTACTO</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-color container-fluid mx-5 my-1">
+                <div class="container-fluid m-0 p-0">
+                    <div class="header__icono">
+                        <a class="navbar-brand p-0 m-0" href="index.html"><img src="./img/icono.png" alt="basquet" width="65px"></a>
+                    </div>
+                  <button class="navbar-toggler rounded-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse header__nav__ul" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto d-flex gap-1 header__ul">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link nav-item-producto dropdown-toggle" href="./paginas/producto.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          PRODUCTOS
+                        </a>
+                        <ul class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item link-dark" href="./paginas/producto.html" id="hombre">Hombre</a></li>
+                          <li><a class="dropdown-item link-dark" href="./paginas/producto.html" id="mujer">Mujer</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/ubicacion.html">UBICACIÓN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/sobrenosotros.html">SOBRE NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./paginas/contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex px-3" role="search">
+                      <input class="form-control me-1 rounded-0" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn border-0" type="submit"><img src="./img/lupa.png" alt="lupa" width="30px"></button>
+                    </form>
+                    <ul class="my-auto header__ul navbar-text">
+                        <li><a class="nav-link" href="./paginas/sesion.html"><img src="./img/usuario.png" alt="usuario" width="35px"></a></li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
-            <ul class="header__ul">
-                <li><a href="./paginas/sesion.html">Iniciar Sesión</a></li>
-            </ul>
         </header>
     
         <!-- main -->
         <main>
             <div class="main__contenedor__texto">
                 <div class="main__boxmodel">
-                    <h2 class="animate__animated animate__backInDown">SS</h2>
-                    <p class="animate__animated animate__backInDown">
-                        SprotsShop es la mejor tienda online de ropa deportiva
+                    <h2 class="animate__animated animate__backInDown m-0">SS</h2>
+                    <p class="animate__animated animate__backInDown m-0">
+                        SportsShop es la mejor tienda online de ropa deportiva
                     </p>
                 </div>
                 <div class="main__boton">
@@ -84,7 +110,7 @@
         <!-- footer -->
         <footer class="footer">
             <div class="footer__contactenos">
-                <ul>
+                <ul class="m-0 p-0">
                     <div>
                         <li><a class="footer__contacto__a" href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
                     </div>
@@ -98,5 +124,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

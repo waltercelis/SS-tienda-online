@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     /* HOME-INDEX */
     .grid-container {
         grid-template-rows: auto 480px auto 450px auto;
@@ -8,17 +8,13 @@
     .header {
         font-size: 15px;
     }
-    .header .header__nav__ul {
-        gap: 45px;
-    }
     .header .header__nav__ul a,
     .header .header__ul li a {
         font-size: 13px;
     }
     .header .header__icono {
-        width: 60px;
-        margin: 10px;
-    } 
+        width: 70px;
+    }
     
     .main__boton a {
         font-size: 17px;
@@ -40,19 +36,8 @@
         font-size: 13px;
     }
 
-    .header {
-        font-size: 12px;
-    }
-    .header .header__nav__ul {
-        gap: 38.5px;
-    }
-    .header .header__nav__ul a,
-    .header .header__ul li a {
-        font-size: 8px;
-    }
     .header .header__icono {
-        width: 40px;
-        margin: 8px;
+        width: 45px;
     }
 
     .main__contenedor__texto {
@@ -194,19 +179,8 @@
         font-size: 10px;
     }
 
-    .header {
-        font-size: 10px;
-    }
-    .header .header__nav__ul {
-        gap: 4px;
-    }
-    .header .header__nav__ul a,
-    .header .header__ul li a {
-        font-size: 7px;
-    }
     .header .header__icono {
-        width: 30px;
-        margin: 8px;
+        width: 45px;
     }
 
     .main__contenedor__texto {
