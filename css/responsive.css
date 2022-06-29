@@ -179,9 +179,11 @@
         font-size: 10px;
     }
 
+
     .header .header__icono {
         width: 45px;
     }
+
 
     .main__contenedor__texto {
         display: flex;
@@ -202,6 +204,7 @@
         font-size: 7px;
     }
 
+
     .section .section__img {
         display: flex;
         flex-wrap: wrap;
@@ -211,6 +214,7 @@
         min-width: 140px;
         max-width: 140px;
     }
+
 
     .section2 {
         display: flex;
@@ -230,7 +234,7 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        padding: 20px;
+        padding: 20px 20px 0 ;
     }
     .section__boxmodel2 ul {
         height: 100%;
@@ -247,17 +251,22 @@
     }
     .section__boxmodel2 ul li h3 {
         padding-bottom: 20px;
+        font-size: 14px;
+    }
+    .section__boxmodel2 .section__boxmodel2__p {
+        font-size: 9px;
     }
     .section__video {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-bottom: 20px;
+
     }
     .section__video iframe {
-        width: 300px;
-        height: 170px;
+        width: 330px;
+        height: 200px;
     }
+
 
     .footer .footer__contactenos ul {
         gap: 13px;
