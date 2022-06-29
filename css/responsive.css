@@ -38,10 +38,10 @@
 
     .header .header__icono {
         width: 45px;
-        margin-left: -20px;
+        /* margin-left: -20px; */
     }
     .header .header__button {
-        margin-right: -20px;
+        margin-right: -15px;
     }
 
     .main__contenedor__texto {
@@ -186,10 +186,10 @@
 
     .header .header__icono {
         width: 45px;
-        margin-left: -25px;
+        /* margin-left: -25px; */
     }
     .header .header__button {
-        margin-right: -25px;
+        margin-right: -20px;
     }
 
     .main__contenedor__texto {
@@ -258,10 +258,10 @@
     }
     .section__boxmodel2 ul li h3 {
         padding-bottom: 20px;
-        font-size: 14px;
+        font-size: 15px;
     }
     .section__boxmodel2 .section__boxmodel2__p {
-        font-size: 9px;
+        font-size: 11px;
     }
     .section__video {
         display: flex;
@@ -288,7 +288,7 @@
     /* CONTACTO */
     .grid-container__contacto {
         grid-template-rows: auto auto auto;
-        font-size: 9px;
+        font-size: 10px;
     }
     .section__contacto .boxmodel .form img {
         width: 130px;
@@ -319,6 +319,7 @@
     /* PRODUCTO */
     .grid-container__producto {
         grid-template-rows: auto auto auto;
+        font-size: 10px;
     }
     .grid__contenedor__producto ul li a {
         width: 130px;
