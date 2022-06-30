@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 /* HOME-INDEX */
 .grid-container {
     display: grid;
@@ -8,7 +9,7 @@
     "section2"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto 650px 400px 450px 55px;
+    grid-template-rows: auto 650px 400px 450px auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -34,6 +35,7 @@
 }
 .navbar a {
     color: black;
+    font-weight: 500;
 }
 .navbar a:hover {
     color: white;
@@ -79,7 +81,6 @@ main {
 }
 .main__boxmodel p {
     font-family: 'Josefin Sans', sans-serif;
-    /* color: rgb(213, 144, 15); */
     font-size: 27px;
 }
 .main__boton {
@@ -188,15 +189,124 @@ main {
 
 
 
+
 .footer {
     grid-area: footer;
     background-color: #363738;
-    height: 100%;
+    width: 100%;
+}
+.footer .footer__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer .footer__contenedor .box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.footer .footer__contenedor .box__footer .logo img {
+    width: 65px;
+}
+.footer .footer__contenedor .box__footer .parrafo {
+    max-width: 400px;
+    margin-top: 11px;
+    font-weight: 500;
+    color: #d3d7da;
+}
+.footer .footer__contenedor .box__footer h2 {
+    color: #bcbcbc;
+    font-weight: 600;
+}
+.footer .footer__contenedor .box__footer a {
+    margin-top: 10px;
+    color: #d3d7da;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footer .footer__contenedor .box__footer a:hover {
+    opacity: .8;
+}
+.footer .footer__contenedor .box__footer a .fab {
+    font-size: 20px;
+}
+.footer .box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.footer .box__copyright p {
+    margin-top: 20px;
+    color: #d3d7da;
+    font-weight: 500;
+}
+.footer .box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #d3d7da;
+}
+/* .footer .footer__logo .footer__logo__a a img {
+    width: 65px;
+}
+.footer .footer__logo .footer__logo__p {
+    max-width: 350px;
+    color: #d3d7da;
+}
+.footer .footer__compania {
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__compania__h2 {
+    color: #d3d7da;
+}
+.footer .footer__compania__h2 h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
 }
-.footer .footer__contactenos {
+.footer .footer__compania__ul ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer .footer__compania__ul ul li {
+    list-style: none;
+}
+.footer .footer__compania__ul ul li a {
+    color: #d3d7da;
+    text-decoration: none;
+}
+.footer .footer__contactenos .footer__contactenos__h2 {
+    color: #d3d7da;
+}
+.footer .footer__contactenos .footer__contactenos__h2 h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.footer .footer__contactenos .footer__contactenos__ul ul{
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__contactenos__ul ul li {
+    list-style: none;
+}
+.footer .footer__contactenos__ul ul li a {
+    color: #d3d7da;
+    text-decoration: none;
+}
+.footer .footer__contactenos__ul ul li a img {
+    width: 18px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 5px;
+} */
+
+/* .footer .footer__contactenos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,7 +339,7 @@ main {
     width: 28px;
     transition: all .03s;
 }
-
+ */
 
 /* SOBRENOSOTROS */
 .grid-container__sobrenosotros {
@@ -239,7 +349,7 @@ main {
     "section__nosotros"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: auto auto auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -251,7 +361,7 @@ main {
 
 .grid__contenedor__sobrenosotros .section__nosotros {
     min-height: 200px;
-    padding: 20px;
+    padding: 20px 50px;
 }
 .grid__contenedor__sobrenosotros .section__nosotros div {
     height: 100%;
@@ -263,7 +373,7 @@ main {
 
 .grid__contenedor__sobrenosotros .section__historia {
     min-height: 700px;
-    padding: 20px;
+    padding: 50px;
 }
 .grid__contenedor__sobrenosotros .section__historia div {
     display: flex;
@@ -284,7 +394,7 @@ main {
     "section__ubicacion"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: auto auto auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -292,7 +402,7 @@ main {
 .section__ubicacion {
     grid-area: section__ubicacion;
     height: 100vh;
-    margin: 20px;
+    margin: 20px 50px;
 }
 .section__ubicacion div div a {
     text-decoration: none;
@@ -314,7 +424,7 @@ main {
     "section__producto"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: auto auto auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -326,7 +436,7 @@ main {
 
 
 .grid__contenedor__producto .section__productos__hombre {
-    padding: 20px;
+    padding: 20px 50px;
 }
 .grid__contenedor__producto ul li a {
     text-decoration: none;
@@ -386,7 +496,7 @@ main {
 
 
 .grid__contenedor__producto .section__productos__mujer {
-    padding: 20px;
+    padding: 20px 50px;
 }
 .grid__contenedor__producto ul li a {
     text-decoration: none;
@@ -450,14 +560,14 @@ main {
     "section__sesion"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: auto auto auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .flex-container {
     grid-area: section__sesion;
-    padding: 20px;
+    padding: 20px 50px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -490,14 +600,14 @@ form .section__input input:hover {
     "section__contacto"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 50px;
+    grid-template-rows: auto auto auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .section__contacto {
     grid-area: section__contacto;
-    margin: 20px;
+    margin: 20px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
