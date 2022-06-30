@@ -19,12 +19,6 @@
     .main__boton a {
         font-size: 17px;
     }
-
-    .footer .footer__contactenos img {
-        width: 24px;
-        height: auto;
-        margin: 5px 0;
-    }
 }
 
 
@@ -116,13 +110,8 @@
         height: 220px;
     }
 
-    .footer .footer__contactenos ul {
-        gap: 15px;
-    }
-    .footer .footer__contactenos img {
-        width: 22px;
-        height: auto;
-        margin: 6px 0;
+    .footer .footer__contenedor .box__footer .logo img {
+        width: 45px;
     }
     
 
@@ -259,12 +248,8 @@
         height: 170px;
     }
 
-    .footer .footer__contactenos ul {
-        gap: 13px;
-    }
-    .footer .footer__contactenos img {
-        width: 20px;
-        height: auto;
+    .footer .footer__contenedor .box__footer .logo img {
+        width: 45px;
     }
     
 
