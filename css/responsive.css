@@ -286,7 +286,7 @@
 
 
     .footer .footer-container {
-        margin: 0px -25px;
+        margin-left: -25px;
     }
     .footer .footer__contenedor .box__footer .logo img {
         width: 45px;
