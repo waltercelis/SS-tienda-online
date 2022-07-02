@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 /* HOME-INDEX */
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-areas:
     "header"
@@ -64,7 +64,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-.main__contenedor__texto {
+.main__contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,10 +246,101 @@ main {
     border: none;
     height: 1px;
     background-color: #d3d7da;
+} */
+
+
+
+
+/* HEADER GLOBAL */
+.header {
+    grid-area: header;
+    background-color: rgb(213, 144, 15);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+.header .header__ul li {
+    list-style: none;
+}
+.navbar-color {
+    background-color: rgb(213, 144, 15);
+}
+.navbar a {
+    color: black;
+    font-weight: 500;
+}
+.navbar a:hover {
+    color: white;
+}
+.navbar .nav-item-producto:focus {
+    color: white;
+}
+.active {
+    color: white !important;
 }
 
-
-
+/* FOOTER GLOBAL */
+.footer {
+    grid-area: footer;
+    background-color: #363738;
+    width: 100%;
+}
+.footer .footer__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.footer .footer__contenedor .box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.footer .footer__contenedor .box__footer .logo img {
+    width: 65px;
+}
+.footer .footer__contenedor .box__footer .parrafo {
+    max-width: 400px;
+    margin-top: 11px;
+    font-weight: 500;
+    color: #d3d7da;
+}
+.footer .footer__contenedor .box__footer h2 {
+    color: #bcbcbc;
+    font-weight: 600;
+}
+.footer .footer__contenedor .box__footer a {
+    margin-top: 10px;
+    color: #d3d7da;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footer .footer__contenedor .box__footer a:hover {
+    opacity: .8;
+}
+.footer .footer__contenedor .box__footer a .fab {
+    font-size: 20px;
+}
+.footer .box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+.footer .box__copyright p {
+    margin-top: 20px;
+    color: #d3d7da;
+    font-weight: 500;
+}
+.footer .box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #d3d7da;
+}
 
 /* SOBRENOSOTROS */
 .grid-container__sobrenosotros {
