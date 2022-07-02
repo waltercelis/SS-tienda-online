@@ -16,7 +16,7 @@
 .grid-container .header {
   /* HEADER */
   grid-area: header;
-  background-color: rgb(213, 144, 15);
+  background: linear-gradient(90deg, rgb(213, 144, 15), rgb(213, 152, 21), rgb(201, 136, 16));
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,9 +25,6 @@
   top: 0;
   height: 100%;
   z-index: 1;
-}
-.grid-container .header .navbar-color {
-  background-color: rgb(213, 144, 15);
 }
 .grid-container .header .navbar .header__ul li {
   list-style: none;
