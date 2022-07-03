@@ -441,6 +441,10 @@ main {
     margin-top: 35px;
     margin-bottom: 15px;
 }
+.grid__contenedor__producto h5 {
+    color: #777888;
+    font-weight: 500;
+}
 .grid__contenedor__producto .section__productos__hombre {
     padding: 20px 50px;
 }

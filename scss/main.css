@@ -143,6 +143,10 @@
   background-color: rgba(213, 144, 15, 0.88);
   color: black;
 }
+.grid-container .section .section__container__producto .section__img li .producto__info h4 {
+  color: #777888;
+  font-weight: 100;
+}
 .grid-container .section .section__container__producto .section__img li a {
   width: 250px;
   height: 330px;
