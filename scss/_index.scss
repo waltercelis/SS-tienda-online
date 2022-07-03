@@ -41,6 +41,13 @@
             .active {
                 color: white !important;
             }
+            form {
+                button {
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
         }
         
     }
@@ -104,14 +111,13 @@
         justify-content: center;
         font-family: Arial, Helvetica, sans-serif;
         .section__container__producto {
-            margin-top: 40px;
-            margin-bottom: 40px;
+            margin: 40px 0;
             padding: 2px 16px;
             .section__img {
                 display: flex;
                 justify-content: space-between;
-                min-width: 150px;
-                min-height: 150px;
+                /* min-width: 250px;
+                min-height: 250px; */
                 :first-child,
                 :nth-child(2),
                 :nth-child(3),

@@ -79,13 +79,20 @@
         }
     
         .section {
-            .section__img {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                li a {
-                    min-width: 140px;
-                    max-width: 140px;
+            .section__container__producto {
+                .section__img {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li {
+                        a {
+                            min-width: 160px;
+                            max-width: 160px;
+                            max-height: 280px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
                 }
             }
         }
@@ -202,13 +209,20 @@
         }
     
         .section {
-            .section__img {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                li a {
-                    min-width: 140px;
-                    max-width: 140px;
+            .section__container__producto {
+                .section__img {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li {
+                        a {
+                            min-width: 140px;
+                            max-width: 140px;
+                            max-height: 240px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
                 }
             }
         }

@@ -42,6 +42,9 @@
 .grid-container .header .navbar .active {
   color: white !important;
 }
+.grid-container .header .navbar form button img {
+  width: 30px;
+}
 .grid-container main {
   /* MAIN */
   grid-area: main;
@@ -102,15 +105,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .grid-container .section .section__container__producto {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0;
   padding: 2px 16px;
 }
 .grid-container .section .section__container__producto .section__img {
   display: flex;
   justify-content: space-between;
-  min-width: 150px;
-  min-height: 150px;
+  /* min-width: 250px;
+  min-height: 250px; */
 }
 .grid-container .section .section__container__producto .section__img :first-child,
 .grid-container .section .section__container__producto .section__img :nth-child(2),
@@ -322,14 +324,17 @@
   .grid-container main .main__contenedor__texto .main__boton a {
     font-size: 12px;
   }
-  .grid-container .section .section__img {
+  .grid-container .section .section__container__producto .section__img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .grid-container .section .section__img li a {
-    min-width: 140px;
-    max-width: 140px;
+  .grid-container .section .section__container__producto .section__img li a {
+    min-width: 160px;
+    max-width: 160px;
+    max-height: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .grid-container .section2 {
     display: flex;
@@ -421,14 +426,17 @@
   .grid-container main .main__contenedor__texto .main__boton a {
     font-size: 9px;
   }
-  .grid-container .section .section__img {
+  .grid-container .section .section__container__producto .section__img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .grid-container .section .section__img li a {
+  .grid-container .section .section__container__producto .section__img li a {
     min-width: 140px;
     max-width: 140px;
+    max-height: 240px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .grid-container .section2 {
     display: flex;
