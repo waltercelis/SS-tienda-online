@@ -433,6 +433,14 @@ main {
 }
 
 
+.grid__contenedor__producto h2 {
+    background-color: #222333;
+    color: white;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
 .grid__contenedor__producto .section__productos__hombre {
     padding: 20px 50px;
 }
