@@ -436,57 +436,67 @@ main {
 .grid__contenedor__producto .section__productos__hombre {
     padding: 20px 50px;
 }
-.grid__contenedor__producto ul li a {
+.grid__contenedor__producto .section__img :first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grid__contenedor__producto .section__img li a {
     text-decoration: none;
     list-style: none;
+    width: 250px;
+    height: 330px;
+    margin: auto;
 }
-.grid__contenedor__producto ul li:hover {
-    border: 1px solid black;
+.grid__contenedor__producto .section__img li {
+    display: inline;
+    margin: 5px;
+    padding: 10px 16px;
 }
-.grid__contenedor__producto .section__productos__hombre .section__hombre__zapatillas ul {
+.grid__contenedor__producto .section__img li:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    padding: 10px 16px;
+}
+.grid__contenedor__producto .section__img li .producto__info {
+    border-top: 1px solid #777;
+}
+.grid__contenedor__producto .section__img li .producto__info button {
+    background-color: rgb(213, 144, 15);
+    border-radius: 4%;
+    color: #333;
+    border: 0;
+    padding: 8px 25px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-    margin: 20px 0;
-}
-.grid__contenedor__producto .section__productos__hombre .section__hombre__zapatillas ul li {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
-.grid__contenedor__producto .section__productos__hombre .section__hombre__remeras ul {
+.grid__contenedor__producto .section__img li .producto__info button:hover {
+    background-color: rgba(213, 144, 15, .88);
+    color: black;
+}
+.grid__contenedor__producto .section__productos__hombre .section__hombre__zapatillas ul,
+.grid__contenedor__producto .section__productos__hombre .section__hombre__remeras ul,
+.grid__contenedor__producto .section__productos__hombre .section__hombre__pantalones ul,
+.grid__contenedor__producto .section__productos__hombre .section__hombre__accesorios ul,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__zapatillas ul,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__remeras ul,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__pantalones ul,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__accesorios ul  {
     display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 30px;
     margin: 20px 0;
 }
-.grid__contenedor__producto .section__productos__hombre .section__hombre__remeras ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.grid__contenedor__producto .section__productos__hombre .section__hombre__pantalones ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-    margin: 20px 0;
-}
-.grid__contenedor__producto .section__productos__hombre .section__hombre__pantalones ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.grid__contenedor__producto .section__productos__hombre .section__hombre__accesorios ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-    margin: 20px 0;
-}
-.grid__contenedor__producto .section__productos__hombre .section__hombre__accesorios ul li {
+.grid__contenedor__producto .section__productos__hombre .section__hombre__zapatillas ul li,
+.grid__contenedor__producto .section__productos__hombre .section__hombre__remeras ul li,
+.grid__contenedor__producto .section__productos__hombre .section__hombre__pantalones ul li,
+.grid__contenedor__producto .section__productos__hombre .section__hombre__accesorios ul li,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__zapatillas ul li,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__remeras ul li,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__pantalones ul li,
+.grid__contenedor__producto .section__productos__mujer .section__mujer__accesorios ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,58 +505,6 @@ main {
 
 .grid__contenedor__producto .section__productos__mujer {
     padding: 20px 50px;
-}
-.grid__contenedor__producto ul li a {
-    text-decoration: none;
-    list-style: none;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__zapatillas ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-    margin: 20px 0;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__zapatillas ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__remeras ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-    margin: 20px 0;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__remeras ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__pantalones ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-    margin: 20px 0;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__pantalones ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__accesorios ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 30px;
-    margin: 20px 0;
-}
-.grid__contenedor__producto .section__productos__mujer .section__mujer__accesorios ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 
