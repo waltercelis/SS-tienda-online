@@ -384,4 +384,9 @@
         flex-direction: column;
         justify-content: center;
     }
+    .grid__contenedor__producto div .section__img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
