@@ -2,22 +2,17 @@
     /* HOME-INDEX */
     .grid-container {
         grid-template-rows: auto 480px auto 450px auto;
-        font-size: 15px;
+        font-size: 1rem;
     }
 
-    .header {
-        font-size: 15px;
+    .header .header__nav .nav__icono {
+    margin: 0 -25px;
     }
-    .header .header__nav__ul a,
-    .header .header__ul li a {
-        font-size: 13px;
+    .header .header__nav .nav__usuario {
+    margin: 0 25px;
     }
-    .header .header__icono {
-        width: 70px;
-    }
-    
-    .main__boton a {
-        font-size: 17px;
+    .footer .footer-container {
+    margin-left: -25px;
     }
 }
 
@@ -31,21 +26,78 @@
     }
 
 
-    .header nav {
-        width: 100%;
-        margin: 0 50px !important;
+    .header .header__nav {
+    flex-direction: column;
+    height: 101%;
     }
-    .header .header__icono {
-        width: 45px;
+    .header .header__nav .nav__icon {
+    display: flex;
+    margin: 0 50px;
+    flex-direction: column;
+    justify-content: end;
+    height: 58px;
+    width: 100%;
     }
-    .header .navbar .header__ul {
-        padding-top: 20px !important;
-        padding-left: 0 !important;
-        padding-bottom: 10px !important;
+    .header .header__nav #label__check {
+    display: block;
     }
-    .header .navbar form {
-        width: 100%;
-        padding: 0 !important;
+    .header .header__nav #nav__check:checked ~ .nav__icono {
+    margin-top: 1rem;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    }
+    .header .header__nav #nav__check:checked ~ .nav__menu {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    }
+    .header .header__nav #nav__check:checked ~ .nav__usuario {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 1rem;
+    }
+    .header .header__nav .nav__icono {
+    width: 50px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    }
+    .header .header__nav .nav__menu {
+    flex-direction: column;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    }
+    .header .header__nav .nav__menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+    }
+    .header .header__nav .nav__menu ul li {
+    padding: 0 50px;
+    }
+    .header .header__nav .nav__menu ul li a {
+    font-size: 0.9rem;
+    }
+    .header .header__nav .nav__menu .nav__form {
+    justify-content: start;
+    padding: 0 50px;
+    margin: 10px 0;
+    }
+    .header .header__nav .nav__menu .nav__form input {
+    width: 100%;
+    }
+    .header .header__nav .nav__usuario {
+    margin: 10px 0;
+    padding: 0 50px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
     }
 
     .main__contenedor__texto {
@@ -197,21 +249,78 @@
     }
 
 
-    .header nav {
-        width: 100%;
-        margin: 0 25px !important;
+    .header .header__nav {
+    flex-direction: column;
+    height: 101%;
     }
-    .header .header__icono {
-        width: 45px;
+    .header .header__nav .nav__icon {
+    display: flex;
+    margin: 0 50px;
+    flex-direction: column;
+    justify-content: end;
+    height: 58px;
+    width: 100%;
     }
-    .header .navbar .header__ul {
-        padding-top: 20px !important;
-        padding-left: 0 !important;
-        padding-bottom: 10px !important;
+    .header .header__nav #label__check {
+    display: block;
     }
-    .header .navbar form {
-        width: 100%;
-        padding: 0 !important;
+    .header .header__nav #nav__check:checked ~ .nav__icono {
+    margin-top: 1rem;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    }
+    .header .header__nav #nav__check:checked ~ .nav__menu {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    }
+    .header .header__nav #nav__check:checked ~ .nav__usuario {
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 1rem;
+    }
+    .header .header__nav .nav__icono {
+    width: 50px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    }
+    .header .header__nav .nav__menu {
+    flex-direction: column;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+    }
+    .header .header__nav .nav__menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+    }
+    .header .header__nav .nav__menu ul li {
+    padding: 0 50px;
+    }
+    .header .header__nav .nav__menu ul li a {
+    font-size: 0.9rem;
+    }
+    .header .header__nav .nav__menu .nav__form {
+    justify-content: start;
+    padding: 0 50px;
+    margin: 10px 0;
+    }
+    .header .header__nav .nav__menu .nav__form input {
+    width: 100%;
+    }
+    .header .header__nav .nav__usuario {
+    margin: 10px 0;
+    padding: 0 50px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
     }
 
 
