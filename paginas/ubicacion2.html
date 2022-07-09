@@ -2,24 +2,24 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/responsive.css">
-	<link rel="shortcut icon" href="../img/icono.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<title>Ubicación | SS tienda online</title>
+    <link rel="shortcut icon" href="../img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/f112a79015.js" crossorigin="anonymous"></script>
-	<title>Contacto | SS tienda online</title>
 </head>
 <body>
 
-	<div class="grid-container__contacto">
+	<div class="grid-container__ubicacion">
 
 		<!-- header -->
 		<header class="header">
             <nav class="header__nav">
-				<input type="checkbox" id="nav__check">
+                <input type="checkbox" id="nav__check">
                 <label id="label__check" for="nav__check">
                     <i class="fa-solid fa-bars nav__icon"></i>
                 </label>
@@ -36,13 +36,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="../paginas/ubicacion2.html">UBICACIÓN</a>
+                            <a class="active" href="../paginas/ubicacion2.html">UBICACIÓN</a>
                         </li>
                         <li>
-                          <a href="../paginas/sobrenosotros.html">SOBRE NOSOTROS</a>
+                            <a href="../paginas/sobrenosotros.html">SOBRE NOSOTROS</a>
                         </li>
                         <li>
-                          <a class="active" href="../paginas/contacto.html">CONTACTO</a>
+                            <a href="../paginas/contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                     <form class="nav__form">
@@ -56,33 +56,17 @@
             </nav>
         </header>
 
-
 		<!-- section -->
-		<section class="section__contacto">
-			<div class="contacto__container animate__animated animate__backInDown">
-                <h1>Contacte a SS</h1>
-                <form class="form">
-                    <img src="https://cdn-icons-png.flaticon.com/512/95/95645.png">
-                    <div class="form-email">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="form-mensaje">
-                        <label class="form-label">Mensaje</label>
-                        <textarea class="form-control"></textarea>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" name="connected" class="check">
-                        <label for="connected" class="check">Recibir más información sobre nosotros</label>
-                    </div>
-                    <div class="form-enviar">
-                        <input class="enviar" type="submit" value="Enviar">
-                    </div>
-                </form>	
-            </div>
+		<section class="section__ubicacion">
+			<div>
+				<h1 class="animate__animated animate__slideInLeft mb-5">UBICACIÓN</h1>
+				<div>
+					<p>Nosotros nos encontramos en Buenos Aires, CABA </p>
+					<a href="https://www.google.com.ar/maps/preview">Google Maps</a>
+				</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12574.580601619808!2d-57.5736739!3d-38.0087366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x643af57e4933f20!2sCasa%20del%20Puente!5e0!3m2!1ses-419!2sar!4v1619616783943!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
 		</section>
-
-        
 
 		<!-- footer -->
 		<footer class="footer">
