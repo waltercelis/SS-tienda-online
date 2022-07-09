@@ -78,24 +78,24 @@
                         flex-direction: column;
                         align-items: flex-start;
                         margin: 10px 0;
+                        gap: 25px;
                         li {
                             padding: 0 50px;
+                            width: 100%;
                             a{
-                                font-size: .9rem;
+                                font-size: 1rem;
+                                width: 100%;
                             }
                             ul {
                                 width: 130px;
                                 top: 175px;
                                 li {
-                                    margin-left: -2rem;
+                                    margin-left: -2.2rem;
+                                    width: 140%;
                                     a{
-                                        display: flex;
-                                        justify-content: flex-start;
-                                        flex-direction: row;
                                         font-size: 12px;
                                         padding: 5px 0;
-                                        left: 0;
-                                        width: 100%;
+                                        width: 140%;
                                     }
                                     a:hover{
                                         transform: scale(1);
@@ -202,9 +202,6 @@
                                 text-align: center;
                             }
                         }
-                        /* .section__boxmodel2__p {
-                            text-align: center;
-                        } */
                     }
                 }
 
@@ -291,24 +288,24 @@
                         flex-direction: column;
                         align-items: flex-start;
                         margin: 10px 0;
+                        gap: 25px;
                         li {
                             padding: 0 50px;
+                            width: 100%;
                             a{
-                                font-size: .9rem;
+                                font-size: 1rem;
+                                width: 100%;
                             }
                             ul {
                                 width: 130px;
                                 top: 175px;
                                 li {
-                                    margin-left: -2rem;
+                                    margin-left: -2.2rem;
+                                    width: 140%;
                                     a{
-                                        display: flex;
-                                        justify-content: flex-start;
-                                        flex-direction: row;
                                         font-size: 12px;
                                         padding: 5px 0;
-                                        left: 0;
-                                        width: 100%;
+                                        width: 140%;
                                     }
                                     a:hover{
                                         transform: scale(1);
@@ -419,10 +416,6 @@
                                 text-align: center;
                             }
                         }
-                        /* .section__boxmodel2__p {
-                            font-size: 11px;
-                            text-align: center;
-                        } */
                     }
                 }
                 .section__video {
