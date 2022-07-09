@@ -469,28 +469,28 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 10px 0;
+    gap: 25px;
   }
   .grid-container .header .header__nav .nav__menu ul li {
     padding: 0 50px;
+    width: 100%;
   }
   .grid-container .header .header__nav .nav__menu ul li a {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    width: 100%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul {
     width: 130px;
     top: 175px;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li {
-    margin-left: -2rem;
+    margin-left: -2.2rem;
+    width: 140%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
     font-size: 12px;
     padding: 5px 0;
-    left: 0;
-    width: 100%;
+    width: 140%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a:hover {
     transform: scale(1);
@@ -567,9 +567,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* .section__boxmodel2__p {
-        text-align: center;
-    } */
   }
   .grid-container .section2 .section__container .section__boxmodel2 ul li {
     display: flex;
@@ -654,28 +651,28 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 10px 0;
+    gap: 25px;
   }
   .grid-container .header .header__nav .nav__menu ul li {
     padding: 0 50px;
+    width: 100%;
   }
   .grid-container .header .header__nav .nav__menu ul li a {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    width: 100%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul {
     width: 130px;
     top: 175px;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li {
-    margin-left: -2rem;
+    margin-left: -2.2rem;
+    width: 140%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
     font-size: 12px;
     padding: 5px 0;
-    left: 0;
-    width: 100%;
+    width: 140%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a:hover {
     transform: scale(1);
@@ -755,10 +752,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* .section__boxmodel2__p {
-        font-size: 11px;
-        text-align: center;
-    } */
   }
   .grid-container .section2 .section__container .section__boxmodel2 ul li {
     display: flex;
