@@ -10,7 +10,6 @@
     <title>Iniciar sesión | SS tienda online</title>
     <link rel="shortcut icon" href="../img/icono.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/f112a79015.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,10 +27,10 @@
                   <a href="../index.html"><img src="../img/icono.png" alt="basquet"></a>
               </div>
               <div class="nav__menu">
-                  <ul class="m-0 p-0">
+                  <ul>
                       <li>
                           <a class="menu__productos">PRODUCTOS</a>
-                          <ul class="m-0 p-0">
+                          <ul>
                               <li><a href="../paginas/producto.html">Hombre</a></li>
                               <li><a href="../paginas/producto.html">Mujer</a></li>
                           </ul>
@@ -58,33 +57,29 @@
       </header>
 
         <!-- section -->
-        <section class="flex-container">
-            <h1 class="animate__animated animate__slideInLeft">Inicie sesión en la cuenta de SS tienda online</h1>
-            <form>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Contraseña</label>
-                </div>
-                <div class="mt-2 form-check">
-                    <input type="checkbox" name="connected" class="form-check-input">
-                    <label for="connected" class="form-check-label">Mantenerme conectado</label>
-                </div>
-                <div class="my-4 section__input d-flex gap-2">
-                    <input class="button" type="submit" value="Iniciar sesión">
-                    <input class="delete section__div__input" type="reset" value="Delete">
-                </div>
-                <span class="section__link mb-4 d-block">
-                    <a href="#">¿Olvidaste la contraseña?</a>
-                </span>
-                <span class="section__link">
-                    <a href="#">Registrate ahora</a>
-                </span>
+        <section class="section__sesion">
+          <div class="sesion__container animate__animated animate__backInDown">
+            <h1>Inicie sesión en SS</h1>
+            <form method="post">
+              <div class="username">
+                <input type="text" required>
+                <label>Email</label>
+              </div>
+              <div class="username">
+                <input type="password" required>
+                <label>Contraseña</label>
+              </div>
+              <input type="checkbox" name="connected" class="check">
+              <label for="connected" class="check">Mantenerme conectado</label>
+              <div class="recordar">¿Olvidaste la contraseña?</div>
+              <input type="submit" value="Iniciar sesión">
+              <div class="registrarse">
+                Registrate ahora
+              </div>
             </form>
+          </div>
         </section>
+
 
         <!-- footer -->
         <footer class="footer">
@@ -95,18 +90,18 @@
                       <a href="../index.html"><img src="../img/icono.png" alt="basquet"></a>
                   </div>
                   <div class="parrafo">
-                      <p class="m-0 p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius exercitationem magni rem, eum ducimus architecto eligendi quidem soluta iure, nulla ea, minus iste numquam nemo natus laboriosam nesciunt consectetur!</p>                    
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eius exercitationem magni rem, eum ducimus architecto eligendi quidem soluta iure, nulla ea, minus iste numquam nemo natus laboriosam nesciunt consectetur!</p>                    
                   </div>
               </div>
               <div class="box__footer">
-                  <h2 class="mb-4 p-0">SS</h2>
+                  <h2>SS</h2>
                   <a href="../paginas/producto.html">Productos</a>
                   <a href="../paginas/sobrenosotros.html">Sobre Nosotros</a>
                   <a href="../paginas/ubicacion.html">Ubicación</a>
                   <a href="../paginas/contacto.html">Contacto</a>
               </div>
               <div class="box__footer">
-                  <h2 class="mb-4 p-0">Contactenos</h2>
+                  <h2>Contactenos</h2>
                   <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a>
                   <a target="_blank" href="https://telegram.org/"><i class="fa-brands fa-telegram"></i> Telegram</a>
                   <a target="_blank" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
@@ -119,7 +114,5 @@
           </div>
       </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

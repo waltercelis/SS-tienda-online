@@ -84,12 +84,28 @@
                                 font-size: .9rem;
                             }
                             ul {
+                                width: 130px;
+                                top: 175px;
                                 li {
-                                    a {
-
+                                    margin-left: -2rem;
+                                    a{
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        flex-direction: row;
+                                        font-size: 12px;
+                                        padding: 5px 0;
+                                        left: 0;
+                                        width: 100%;
+                                    }
+                                    a:hover{
+                                        transform: scale(1);
+                                        font-size: 12px;
                                     }
                                 }
                             }
+                        }
+                        li:hover ul{
+                            top: 170px;
                         }
                     }
                     .nav__form {
@@ -182,6 +198,9 @@
                             h3 {
                                 padding-bottom: 20px;
                             }
+                            p {
+                                text-align: center;
+                            }
                         }
                         /* .section__boxmodel2__p {
                             text-align: center;
@@ -207,7 +226,7 @@
                 .footer__contenedor {
                     .box__footer {
                         .logo img {
-                            width: 45px;
+                            width: 50px;
                         }
                     }
                 }
@@ -278,12 +297,28 @@
                                 font-size: .9rem;
                             }
                             ul {
+                                width: 130px;
+                                top: 175px;
                                 li {
-                                    a {
-
+                                    margin-left: -2rem;
+                                    a{
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        flex-direction: row;
+                                        font-size: 12px;
+                                        padding: 5px 0;
+                                        left: 0;
+                                        width: 100%;
+                                    }
+                                    a:hover{
+                                        transform: scale(1);
+                                        font-size: 12px;
                                     }
                                 }
                             }
+                        }
+                        li:hover ul{
+                            top: 170px;
                         }
                     }
                     .nav__form {
@@ -380,11 +415,14 @@
                                 padding-bottom: 20px;
                                 font-size: 15px;
                             }
+                            p {
+                                text-align: center;
+                            }
                         }
-                        .section__boxmodel2__p {
+                        /* .section__boxmodel2__p {
                             font-size: 11px;
                             text-align: center;
-                        }
+                        } */
                     }
                 }
                 .section__video {
@@ -402,11 +440,10 @@
         
         .footer {
             .footer-container {
-                margin-left: -25px;
                 .footer__contenedor {
                     .box__footer {
                         .logo img {
-                            width: 45px;
+                            width: 50px;
                         }
                     }
                 }
