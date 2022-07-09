@@ -237,8 +237,6 @@
 .grid-container .section .section__container__producto .section__img {
   display: flex;
   justify-content: space-between;
-  /* min-width: 250px;
-  min-height: 250px; */
 }
 .grid-container .section .section__container__producto .section__img :first-child,
 .grid-container .section .section__container__producto .section__img :nth-child(2),

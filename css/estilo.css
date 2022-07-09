@@ -239,8 +239,9 @@
 .grid__contenedor__sobrenosotros {
     grid-area: section__nosotros;
 }
-
-
+.grid__contenedor__sobrenosotros h1 {
+    font-size: 2.5rem;
+}
 .grid__contenedor__sobrenosotros .section__nosotros {
     min-height: 200px;
     padding: 20px 50px;
@@ -286,6 +287,9 @@
     height: 100vh;
     margin: 20px 50px;
 }
+.section__ubicacion h1 {
+    font-size: 2.5rem;
+}
 .section__ubicacion div div a {
     text-decoration: none;
     color: #1a0dab;
@@ -315,8 +319,9 @@
     grid-area: section__producto;
     height: 100%;
 }
-
-
+.grid__contenedor__producto h1 {
+    font-size: 2.5rem;
+}
 .grid__contenedor__producto h2 {
     background-color: #222333;
     color: white;
