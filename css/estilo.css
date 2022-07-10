@@ -275,20 +275,28 @@
     grid-template-areas:
     "header"
     "section__ubicacion"
+    "section__ubicacion2"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .section__ubicacion {
     grid-area: section__ubicacion;
-    height: 100vh;
     margin: 20px 50px;
 }
 .section__ubicacion h1 {
     font-size: 2.5rem;
+}
+.section__ubicacion .ubicacion-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.section__ubicacion .ubicacion-texto a {
+    margin-bottom: 5px;
 }
 .section__ubicacion div div a {
     text-decoration: none;
@@ -299,6 +307,70 @@
 }
 .section__ubicacion div div a:visited {
     color: #681da8;
+}
+.section__ubicacion2 {
+    grid-area: section__ubicacion2;
+    background-color: #efefef;
+    height: 100%;
+}
+.section__ubicacion2 .ubicacion2-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section__ubicacion2 .ubicacion2-container .direc {
+    width: 210px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgb(213, 144, 15), rgb(180, 128, 17));
+    margin: 40px 0;
+    cursor: pointer;
+}
+.section__ubicacion2 .ubicacion2-container .direc h2 {
+    padding: 20px 10px;
+    border-bottom: 1px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.section__ubicacion2 .ubicacion2-container .direc p {
+    padding: 25px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section__ubicacion2 .ubicacion2-container .horarios {
+    width: 210px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    background: linear-gradient(180deg, rgb(213, 144, 15), rgb(180, 128, 17));
+    margin: 40px 0;
+    cursor: pointer;
+}
+.section__ubicacion2 .ubicacion2-container .horarios h2 {
+    padding: 20px 10px;
+    border-bottom: 1px solid white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.section__ubicacion2 .ubicacion2-container .horarios ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    height: 150px;
+}
+.section__ubicacion2 .ubicacion2-container .horarios ul li {
+    list-style: none;
+    text-transform: uppercase;
+}
+.section__ubicacion2 .ubicacion2-container .direc:hover,
+.section__ubicacion2 .ubicacion2-container .horarios:hover {
+    transform: scale(1.05);
+    transition: all .4s;
 }
 
 

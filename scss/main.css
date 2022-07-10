@@ -482,12 +482,12 @@
     top: 175px;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li {
-    margin-left: -2.2rem;
-    width: 140%;
+    margin-left: -3.2rem;
+    width: 150%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a {
     font-size: 12px;
-    padding: 5px 0;
+    padding: 5px 20px;
     width: 140%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a:hover {
@@ -664,12 +664,12 @@
     top: 175px;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li {
-    margin-left: -2.2rem;
-    width: 140%;
+    margin-left: -3.2rem;
+    width: 150%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a {
     font-size: 12px;
-    padding: 5px 0;
+    padding: 5px 20px;
     width: 140%;
   }
   .grid-container .header .header__nav .nav__menu ul li ul li a:hover {
