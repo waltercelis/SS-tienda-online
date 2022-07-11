@@ -777,4 +777,24 @@
   .grid-container .footer .footer-container .footer__contenedor .box__footer .logo img {
     width: 50px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/* @media only screen and (min-width: 395px) and (max-width: 425px) {
+    .grid-container {
+        .section {
+            .section__container__producto {
+                .section__img {
+                    flex-direction: column;
+                    li {
+                        a {
+                            min-width: 140px;
+                            max-width: 140px;
+                            max-height: 240px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} *//*# sourceMappingURL=main.css.map */

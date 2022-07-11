@@ -241,31 +241,55 @@
 }
 .grid__contenedor__sobrenosotros h1 {
     font-size: 2.5rem;
+    text-align: center;
 }
 .grid__contenedor__sobrenosotros .section__nosotros {
-    min-height: 200px;
-    padding: 20px 50px;
+    padding: 30px 50px;
 }
 .grid__contenedor__sobrenosotros .section__nosotros div {
     height: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.grid__contenedor__sobrenosotros .section__nosotros div img {
+    width: 275px;
+    height: auto;
+}
+.grid__contenedor__sobrenosotros .section__nosotros div ul {
+    width: 500px;
+    height: 413px;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.grid__contenedor__sobrenosotros .section__nosotros div ul li {
+    list-style: square;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
 .grid__contenedor__sobrenosotros .section__historia {
-    min-height: 700px;
     padding: 50px;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.grid__contenedor__sobrenosotros .section__historia div {
+.grid__contenedor__sobrenosotros .section__historia .box {
+    width: 200px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+    align-items: center;
+    gap: 20px;
 }
-.grid__contenedor__sobrenosotros .section__historia div h2 {
-    margin-bottom: 25px;
+.grid__contenedor__sobrenosotros .section__historia .box svg {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
 }
 
 
