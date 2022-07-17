@@ -187,6 +187,7 @@
     margin-top: 11px;
     font-weight: 500;
     color: #d3d7da;
+    font-style: italic;
 }
 .footer .footer__contenedor .box__footer h2 {
     color: #bcbcbc;
@@ -478,10 +479,16 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    cursor: pointer;
 }
 .grid__contenedor__producto .section__img li .producto__info button:hover {
     background-color: rgba(213, 144, 15, .88);
     color: black;
+}
+.grid__contenedor__producto .section__img li .producto__info a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
 .grid__contenedor__producto .section__productos__hombre .section__hombre__zapatillas ul,
 .grid__contenedor__producto .section__productos__hombre .section__hombre__remeras ul,
