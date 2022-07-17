@@ -576,7 +576,7 @@
     width: 210px;
     height: 440px;
   }
-  .grid-container .section .section__container__producto .section__img li a {
+  .grid-container .section .section__container__producto .section__img li .a-producto {
     min-width: 170px;
     max-width: 170px;
     max-height: 280px;
@@ -762,7 +762,7 @@
     width: 200px;
     height: 390px;
   }
-  .grid-container .section .section__container__producto .section__img li a {
+  .grid-container .section .section__container__producto .section__img li .a-producto {
     min-width: 140px;
     max-width: 140px;
     max-height: 240px;
