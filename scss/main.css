@@ -305,11 +305,9 @@
   margin-bottom: 3px;
 }
 .grid-container .section__container__producto .section__img li .producto__info a {
-  width: 100%;
-  height: 100%;
   text-decoration: none;
 }
-.grid-container .section__container__producto .section__img li a {
+.grid-container .section__container__producto .section__img li .a-producto {
   width: 220px;
   height: 330px;
   margin-left: auto;
@@ -384,6 +382,8 @@
   margin-top: 11px;
   font-weight: 500;
   color: #d3d7da;
+}
+.grid-container .footer-container .footer__contenedor .box__footer .parrafo p {
   font-style: italic;
 }
 .grid-container .footer-container .footer__contenedor .box__footer h2 {
