@@ -270,7 +270,13 @@ $redes-sociales: (
                 @include fr;
                 justify-content: center;
                 text-transform: uppercase;
+                color: transparent;
+                background-color: #b3b3b3;
+                text-shadow: 2px 2px 3px rgba(255, 255, 255, .8);
                 margin: -10px 0 1rem;
+                -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                        background-clip: text;
             }
             .section__img {
                 display: flex;
