@@ -361,13 +361,20 @@
     /* UBICACION */
     .grid-container__ubicacion {
         grid-template-rows: auto auto auto;
-        font-size: 11px;
+        font-size: 12px;
     }
     .section__ubicacion {
         margin: 20px 25px;
     }
+    .section__ubicacion2 .ubicacion2-container .direc h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+    }
     .section__ubicacion2 .ubicacion2-container .direc p {
-        padding: 50px 10px;
+        padding: 45px 10px;
         text-align: center;
         text-transform: uppercase;
     }

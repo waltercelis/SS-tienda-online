@@ -345,33 +345,70 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.section__ubicacion2 .ubicacion2-container .direc {
-    width: 210px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
-    border-radius: 4px;
-    background: linear-gradient(180deg, rgb(213, 144, 15), rgb(180, 128, 17));
-    margin: 40px 0;
+.section__ubicacion2 .ubicacion2-container .card__father{
+    margin: 50px;
+}
+.section__ubicacion2 .ubicacion2-container .card__father:hover .card {
+    transform: rotateY(180deg);
+}
+.section__ubicacion2 .ubicacion2-container .card__father{
+    width: 230px;
+    height: 280px;
     cursor: pointer;
 }
+.section__ubicacion2 .ubicacion2-container .card__father .card{
+    width: 230px;
+    height: 280px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+.section__ubicacion2 .ubicacion2-container .card__father .card .card__front,
+.section__ubicacion2 .ubicacion2-container .card__father .card .card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+.section__ubicacion2 .ubicacion2-container .card__father .card .card__front {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgb(213, 144, 15), rgb(180, 128, 17));
+}
+.section__ubicacion2 .ubicacion2-container .card__father .card .card__back{
+    transform: rotateY(180deg);
+    background: linear-gradient(180deg, rgb(213, 144, 15), rgb(180, 128, 17));
+    width: 230px;
+    height: 280px;
+}
+.section__ubicacion2 .ubicacion2-container .direc,
+.section__ubicacion2 .ubicacion2-container .horarios {
+    width: 230px;
+    height: 280px;
+    text-align: center;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    transform: translateZ(50px);
+}
 .section__ubicacion2 .ubicacion2-container .direc h2 {
-    padding: 20px 10px;
+    padding: 0 10px 20px;
     border-bottom: 1px solid white;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2rem;
 }
 .section__ubicacion2 .ubicacion2-container .direc p {
-    padding: 25px 10px;
+    padding: 25px 10px 0;
     text-align: center;
     text-transform: uppercase;
-}
-.section__ubicacion2 .ubicacion2-container .horarios {
-    width: 210px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
-    border-radius: 4px;
-    background: linear-gradient(180deg, rgb(213, 144, 15), rgb(180, 128, 17));
-    margin: 40px 0;
-    cursor: pointer;
 }
 .section__ubicacion2 .ubicacion2-container .horarios h2 {
     padding: 20px 10px;
@@ -392,12 +429,6 @@
     list-style: none;
     text-transform: uppercase;
 }
-.section__ubicacion2 .ubicacion2-container .direc:hover,
-.section__ubicacion2 .ubicacion2-container .horarios:hover {
-    transform: scale(1.05);
-    transition: all .4s;
-}
-
 
 /* PRODUCTOS */
 .grid-container__producto {
