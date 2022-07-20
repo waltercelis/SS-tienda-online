@@ -1,0 +1,32 @@
+$colorPrincipal: rgb(213, 144, 15);
+$fontPrincipal: Arial, Helvetica, sans-serif;
+
+@mixin btn($bg, $p, $br) {
+    background-color: $bg;
+    border-radius: $br;
+    color: #333;
+    border: 0;
+    padding: $p;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@mixin fr {
+    display: flex;
+    flex-direction: row;
+}
+@mixin fc {
+    display: flex;
+    flex-direction: column;
+}
+
+$coloresRedS: (
+    tg: rgb(147, 219, 248),
+    ig: rgb(152, 77, 222),
+    wh: rgb(32, 160, 32)
+);
+$redes-sociales: (
+    wh: map-get($coloresRedS , wh),
+    ig: map-get($coloresRedS , ig),
+    tg: map-get($coloresRedS , tg)
+);

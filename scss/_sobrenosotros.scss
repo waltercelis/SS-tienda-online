@@ -1,0 +1,64 @@
+@import "vars-sass2";
+
+/* SOBRE NOSOTROS */
+.grid-container__sobrenosotros {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "section__nosotros"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    font-family: Arial, Helvetica, sans-serif;
+    .grid__contenedor__sobrenosotros {
+        grid-area: section__nosotros;
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .section__nosotros {
+            padding: 30px 50px;
+            div {
+                height: 100%;
+                @include fr;
+                justify-content: space-evenly;
+                img {
+                    width: 275px;
+                    height: auto;
+                }
+                div {
+                    ul {
+                        width: 500px;
+                        height: 413px;
+                        @include fc;
+                        justify-content: space-around;
+                        text-transform: uppercase;
+                        li {
+                            list-style: square;
+                            font-family: 'Josefin Sans', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+        .section__historia {
+            padding: 50px;
+            background-color: #efefef;
+            @include fr;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .box {
+                width: 200px;
+                text-align: center;
+                @include fc;
+                align-items: center;
+                gap: 20px;
+                svg {
+                    width: 75px;
+                    height: 75px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
