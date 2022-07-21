@@ -274,23 +274,23 @@
         grid-template-rows: auto auto auto;
         font-size: 13px;
         .section__nosotros {
-            .div {
+            div {
                 display: flex !important;/* SASS me vuelve loco, no quise usar los !important*/
                 flex-direction: column !important;
                 align-items: center !important;
-                .img {
+                img {
                     width: 275px !important;
-                    height: auto !important;
-                    .div2 {
-                        ul {
-                            width: 300px !important;
-                            height: 413px !important;
-                            text-align: center !important;
-                            li {
-                                list-style: square !important;
-                                font-family: 'Josefin Sans', sans-serif !important;
-                            }                        
-                        }
+                    height: auto !important;  
+                }
+                div {
+                    ul {
+                        width: 300px !important;
+                        height: 413px !important;
+                        text-align: center !important;
+                        li {
+                            list-style: square !important;
+                            font-family: 'Josefin Sans', sans-serif !important;
+                        }                        
                     }
                 }
             }
@@ -623,21 +623,21 @@
         font-size: 11px;
         .section__nosotros {
             padding: 20px 25px;
-            .div {
+            div {
                 flex-direction: column !important;
                 align-items: center !important;
-                .img {
+                img {
                     width: 275px !important;
                     height: auto !important;
-                    .div2 {
-                        ul {
-                            width: 300px !important;
-                            height: 413px !important;
-                            text-align: center !important;
-                            li {
-                                list-style: square !important;
-                                font-family: 'Josefin Sans', sans-serif !important;
-                            }
+                }
+                div {
+                    ul {
+                        width: 300px !important;
+                        height: 413px !important;
+                        text-align: center !important;
+                        li {
+                            list-style: square !important;
+                            font-family: 'Josefin Sans', sans-serif !important;
                         }
                     }
                 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
@@ -16,7 +17,7 @@
 .grid-container main { /* MAIN */
   grid-area: main;
   background-color: white;
-  background-image: url(../img/homeInicio.gif);
+  background-image: url(../img/Diseño\ sin\ título.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -677,21 +678,21 @@
     grid-template-rows: auto auto auto;
     font-size: 13px;
   }
-  .grid-container__sobrenosotros .section__nosotros .div {
+  .grid-container__sobrenosotros .section__nosotros div {
     display: flex !important; /* SASS me vuelve loco, no quise usar los !important*/
     flex-direction: column !important;
     align-items: center !important;
   }
-  .grid-container__sobrenosotros .section__nosotros .div .img {
+  .grid-container__sobrenosotros .section__nosotros div img {
     width: 275px !important;
     height: auto !important;
   }
-  .grid-container__sobrenosotros .section__nosotros .div .img .div2 ul {
+  .grid-container__sobrenosotros .section__nosotros div div ul {
     width: 300px !important;
     height: 413px !important;
     text-align: center !important;
   }
-  .grid-container__sobrenosotros .section__nosotros .div .img .div2 ul li {
+  .grid-container__sobrenosotros .section__nosotros div div ul li {
     list-style: square !important;
     font-family: "Josefin Sans", sans-serif !important;
   }
@@ -974,20 +975,20 @@
   .grid-container__sobrenosotros .section__nosotros {
     padding: 20px 25px;
   }
-  .grid-container__sobrenosotros .section__nosotros .div {
+  .grid-container__sobrenosotros .section__nosotros div {
     flex-direction: column !important;
     align-items: center !important;
   }
-  .grid-container__sobrenosotros .section__nosotros .div .img {
+  .grid-container__sobrenosotros .section__nosotros div img {
     width: 275px !important;
     height: auto !important;
   }
-  .grid-container__sobrenosotros .section__nosotros .div .img .div2 ul {
+  .grid-container__sobrenosotros .section__nosotros div div ul {
     width: 300px !important;
     height: 413px !important;
     text-align: center !important;
   }
-  .grid-container__sobrenosotros .section__nosotros .div .img .div2 ul li {
+  .grid-container__sobrenosotros .section__nosotros div div ul li {
     list-style: square !important;
     font-family: "Josefin Sans", sans-serif !important;
   }
