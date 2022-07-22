@@ -275,22 +275,12 @@
         font-size: 13px;
         .section__nosotros {
             div {
-                display: flex !important;/* SASS me vuelve loco, no quise usar los !important*/
-                flex-direction: column !important;
-                align-items: center !important;
-                img {
-                    width: 275px !important;
-                    height: auto !important;  
-                }
+                flex-direction: column;
+                align-items: center;
                 div {
                     ul {
-                        width: 300px !important;
-                        height: 413px !important;
-                        text-align: center !important;
-                        li {
-                            list-style: square !important;
-                            font-family: 'Josefin Sans', sans-serif !important;
-                        }                        
+                        width: 300px;
+                        text-align: center;                    
                     }
                 }
             }
@@ -326,10 +316,14 @@
 
 @media only screen and (min-width: 481px) and (max-width: 510px){
     /* SOBRENOSOTROS */
-    .grid__contenedor__sobrenosotros .section__historia {
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 20px !important;
+    .grid-container__sobrenosotros {
+        .grid__contenedor__sobrenosotros {
+            .section__historia {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
     }
 }
 
@@ -621,33 +615,25 @@
     .grid-container__sobrenosotros {
         grid-template-rows: auto auto auto;
         font-size: 11px;
-        .section__nosotros {
-            padding: 20px 25px;
-            div {
-                flex-direction: column !important;
-                align-items: center !important;
-                img {
-                    width: 275px !important;
-                    height: auto !important;
-                }
+        .grid__contenedor__sobrenosotros {
+            .section__nosotros {
+                padding: 20px 25px;
                 div {
-                    ul {
-                        width: 300px !important;
-                        height: 413px !important;
-                        text-align: center !important;
-                        li {
-                            list-style: square !important;
-                            font-family: 'Josefin Sans', sans-serif !important;
+                    flex-direction: column;
+                    align-items: center;
+                    div {
+                        ul {
+                            width: 300px;
+                            text-align: center;
                         }
                     }
                 }
             }
-        }
-        .section__historia {
-            padding: 25px !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            gap: 20px !important;
+            .section__historia {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
         }
     }
 
@@ -663,12 +649,14 @@
         font-size: 11px;
         .section__contacto {
             .contacto__container {
-                .form-mensaje {
-                    .form-control {
-                        max-width: 200px !important;
-                        min-width: 200px !important;
-                        max-height: 400px !important;
-                        min-height: 100px !important;
+                .form {
+                    .form-mensaje {
+                        .form-control {
+                            max-width: 200px;
+                            min-width: 200px;
+                            max-height: 400px;
+                            min-height: 100px;
+                        }
                     }
                 }
             }

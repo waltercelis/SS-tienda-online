@@ -678,22 +678,12 @@
     font-size: 13px;
   }
   .grid-container__sobrenosotros .section__nosotros div {
-    display: flex !important; /* SASS me vuelve loco, no quise usar los !important*/
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-  .grid-container__sobrenosotros .section__nosotros div img {
-    width: 275px !important;
-    height: auto !important;
+    flex-direction: column;
+    align-items: center;
   }
   .grid-container__sobrenosotros .section__nosotros div div ul {
-    width: 300px !important;
-    height: 413px !important;
-    text-align: center !important;
-  }
-  .grid-container__sobrenosotros .section__nosotros div div ul li {
-    list-style: square !important;
-    font-family: "Josefin Sans", sans-serif !important;
+    width: 300px;
+    text-align: center;
   }
   /* SESION */
   .grid-container__sesion {
@@ -714,10 +704,10 @@
 }
 @media only screen and (min-width: 481px) and (max-width: 510px) {
   /* SOBRENOSOTROS */
-  .grid__contenedor__sobrenosotros .section__historia {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 20px !important;
+  .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__historia {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -971,31 +961,21 @@
     grid-template-rows: auto auto auto;
     font-size: 11px;
   }
-  .grid-container__sobrenosotros .section__nosotros {
+  .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__nosotros {
     padding: 20px 25px;
   }
-  .grid-container__sobrenosotros .section__nosotros div {
-    flex-direction: column !important;
-    align-items: center !important;
+  .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__nosotros div {
+    flex-direction: column;
+    align-items: center;
   }
-  .grid-container__sobrenosotros .section__nosotros div img {
-    width: 275px !important;
-    height: auto !important;
+  .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__nosotros div div ul {
+    width: 300px;
+    text-align: center;
   }
-  .grid-container__sobrenosotros .section__nosotros div div ul {
-    width: 300px !important;
-    height: 413px !important;
-    text-align: center !important;
-  }
-  .grid-container__sobrenosotros .section__nosotros div div ul li {
-    list-style: square !important;
-    font-family: "Josefin Sans", sans-serif !important;
-  }
-  .grid-container__sobrenosotros .section__historia {
-    padding: 25px !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 20px !important;
+  .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__historia {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
   /* SESION */
   .grid-container__sesion {
@@ -1007,11 +987,11 @@
     grid-template-rows: auto auto auto;
     font-size: 11px;
   }
-  .grid-container__contacto .section__contacto .contacto__container .form-mensaje .form-control {
-    max-width: 200px !important;
-    min-width: 200px !important;
-    max-height: 400px !important;
-    min-height: 100px !important;
+  .grid-container__contacto .section__contacto .contacto__container .form .form-mensaje .form-control {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 400px;
+    min-height: 100px;
   }
 }
 /* PRODUCTO */
@@ -1425,7 +1405,6 @@
 .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__nosotros div {
   height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__nosotros div img {
@@ -1433,8 +1412,8 @@
   height: auto;
 }
 .grid-container__sobrenosotros .grid__contenedor__sobrenosotros .section__nosotros div div ul {
-  width: 500px;
-  height: 413px;
+  max-width: 500px;
+  min-height: 413px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1448,7 +1427,6 @@
   padding: 50px;
   background-color: #efefef;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }

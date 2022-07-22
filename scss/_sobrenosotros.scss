@@ -20,7 +20,7 @@
             padding: 30px 50px;
             div {
                 height: 100%;
-                @include fr;
+                display: flex;
                 justify-content: space-evenly;
                 img {
                     width: 275px;
@@ -28,8 +28,8 @@
                 }
                 div {
                     ul {
-                        width: 500px;
-                        height: 413px;
+                        max-width: 500px;
+                        min-height: 413px;
                         @include fc;
                         justify-content: space-around;
                         text-transform: uppercase;
@@ -44,7 +44,7 @@
         .section__historia {
             padding: 50px;
             background-color: #efefef;
-            @include fr;
+            display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             .box {
