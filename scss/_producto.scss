@@ -178,4 +178,9 @@
             }
         }
     }
+    
+    .footerP {
+        @extend .footer;
+        background-color: transparent;
+    }
 }

@@ -15,7 +15,8 @@
         @include fc;
         justify-content: center;
         align-items: center;
-        height: 150vh;
+        height: 200vh;
+        margin-top: -250px;
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         background: linear-gradient(135deg, rgb(255, 238, 205), rgb(35, 28, 13));
@@ -110,5 +111,10 @@
                 }
             }
         }
+    }
+    .footerC {
+        @extend .footer;
+        background-color: transparent;
+        margin-top: -350px;
     }
 }

@@ -107,7 +107,7 @@
 }
 .grid-container .section__container__producto .section__img {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .grid-container .section__container__producto .section__img :first-child,
 .grid-container .section__container__producto .section__img :nth-child(2),
@@ -175,6 +175,7 @@
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #eee;
+  z-index: 1;
 }
 .grid-container .section2 .section__container {
   display: flex;
@@ -220,7 +221,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 99;
 }
 .header__nav {
   display: flex;
@@ -369,10 +370,16 @@
   justify-items: center;
 }
 
-.footer { /* FOOTER GLOBAL*/
+.footer, .grid-container__contacto .footerC, .grid-container__sesion .footerS, .grid-container__producto .footerP { /* FOOTER GLOBAL*/
   grid-area: footer;
-  background-color: #363738;
+  background-color: #eee;
+  background-image: url(../img/wave3.svg);
+  background-size: cover;
   width: 100%;
+  margin-top: -75px;
+}
+.footer-container {
+  padding-top: 150px;
 }
 .footer-container .footer__contenedor {
   display: flex;
@@ -442,7 +449,20 @@
 }
 
 /* RESPONSIVE */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 2000px) {
+  .footer-container {
+    padding-top: 250px;
+  }
+}
+@media only screen and (min-width: 1500px) and (max-width: 1999px) {
+  .footer, .grid-container__contacto .footerC, .grid-container__sesion .footerS, .grid-container__producto .footerP {
+    margin-top: -90px;
+  }
+  .footer-container {
+    padding-top: 200px;
+  }
+}
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
   /* HOME-INDEX */
   .grid-container {
     grid-template-rows: auto 480px auto 450px auto;
@@ -454,7 +474,7 @@
   .header .header__nav .nav__usuario {
     margin: 0 25px;
   }
-  .footer .footer-container {
+  .footer .footer-container, .grid-container__contacto .footerC .footer-container, .grid-container__sesion .footerS .footer-container, .grid-container__producto .footerP .footer-container {
     margin-left: -25px;
   }
 }
@@ -640,7 +660,13 @@
     visibility: hidden;
     transition: all 650ms ease;
   }
-  .footer .footer-container .footer__contenedor .box__footer .logo img {
+  .footer, .grid-container__contacto .footerC, .grid-container__sesion .footerS, .grid-container__producto .footerP {
+    margin-top: -150px;
+  }
+  .footer .footer-container, .grid-container__contacto .footerC .footer-container, .grid-container__sesion .footerS .footer-container, .grid-container__producto .footerP .footer-container {
+    padding-top: 200px;
+  }
+  .footer .footer-container .footer__contenedor .box__footer .logo img, .grid-container__contacto .footerC .footer-container .footer__contenedor .box__footer .logo img, .grid-container__sesion .footerS .footer-container .footer__contenedor .box__footer .logo img, .grid-container__producto .footerP .footer-container .footer__contenedor .box__footer .logo img {
     width: 50px;
   }
   /* PRODUCTO */
@@ -694,6 +720,9 @@
   .grid-container__contacto {
     grid-template-rows: auto auto auto;
     font-size: 13px;
+  }
+  .grid-container__contacto .section__contacto {
+    height: 150vh;
   }
   .grid-container__contacto .section__contacto .contacto__container .form .form-mensaje .form-control {
     max-width: 300px;
@@ -894,7 +923,13 @@
     visibility: hidden;
     transition: all 650ms ease;
   }
-  .footer .footer-container .footer__contenedor .box__footer .logo img {
+  .footer, .grid-container__contacto .footerC, .grid-container__sesion .footerS, .grid-container__producto .footerP {
+    margin-top: -230px;
+  }
+  .footer .footer-container, .grid-container__contacto .footerC .footer-container, .grid-container__sesion .footerS .footer-container, .grid-container__producto .footerP .footer-container {
+    padding-top: 300px;
+  }
+  .footer .footer-container .footer__contenedor .box__footer .logo img, .grid-container__contacto .footerC .footer-container .footer__contenedor .box__footer .logo img, .grid-container__sesion .footerS .footer-container .footer__contenedor .box__footer .logo img, .grid-container__producto .footerP .footer-container .footer__contenedor .box__footer .logo img {
     width: 50px;
   }
   /* PRODUCTO */
@@ -1251,6 +1286,9 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
   padding: 10px 16px;
 }
+.grid-container__producto .footerP {
+  background-color: transparent;
+}
 
 /* UBICACION */
 .grid-container__ubicacion {
@@ -1394,6 +1432,7 @@
 }
 .grid-container__sobrenosotros .grid__contenedor__sobrenosotros {
   grid-area: section__nosotros;
+  z-index: 1;
 }
 .grid-container__sobrenosotros .grid__contenedor__sobrenosotros h1 {
   font-size: 2.5rem;
@@ -1455,11 +1494,12 @@
 .grid-container__sesion .section__sesion {
   grid-area: section__sesion;
   background: linear-gradient(135deg, rgb(255, 238, 205), rgb(35, 28, 13));
-  height: 100vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -250px;
 }
 .grid-container__sesion .section__sesion .sesion__container {
   background-color: white;
@@ -1540,6 +1580,10 @@
   color: rgb(213, 144, 15);
   cursor: pointer;
 }
+.grid-container__sesion .footerS {
+  background-color: transparent;
+  margin-top: -350px;
+}
 
 /* CONTACTO */
 .grid-container__contacto {
@@ -1555,7 +1599,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150vh;
+  height: 200vh;
+  margin-top: -250px;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(135deg, rgb(255, 238, 205), rgb(35, 28, 13));
@@ -1655,4 +1700,8 @@
 .grid-container__contacto .section__contacto .contacto__container .form .form-enviar input:hover {
   background-color: rgba(213, 144, 15, 0.88);
   color: black;
+}
+.grid-container__contacto .footerC {
+  background-color: transparent;
+  margin-top: -350px;
 }/*# sourceMappingURL=main.css.map */

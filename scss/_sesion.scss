@@ -13,10 +13,11 @@
     .section__sesion {
         grid-area: section__sesion;
         background: linear-gradient(135deg, rgb(255, 238, 205), rgb(35, 28, 13));
-        height: 100vh;
+        height: 200vh;
         @include fc;
         justify-content: center;
         align-items: center;
+        margin-top: -250px;
         .sesion__container {
             background-color: white;
             position: absolute;
@@ -89,5 +90,10 @@
                 }
             }
         }
+    }
+    .footerS {
+        @extend .footer;
+        background-color: transparent;
+        margin-top: -350px;
     }
 }
