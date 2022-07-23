@@ -17,7 +17,7 @@
         @include fc;
         justify-content: center;
         align-items: center;
-        margin-top: -250px;
+        margin-top: -150px;
         .sesion__container {
             background-color: white;
             position: absolute;
@@ -93,7 +93,7 @@
     }
     .footerS {
         @extend .footer;
-        background-color: transparent;
-        margin-top: -350px;
+        background-color: #363738;
+        margin-top: -220px;
     }
 }

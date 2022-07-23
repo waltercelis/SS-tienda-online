@@ -10,7 +10,7 @@
     "section2"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto 650px auto 450px auto;
+    grid-template-rows: auto 650px auto 650px auto;
     font-family: $fontPrincipal;  
     
     main {/* MAIN */
@@ -155,10 +155,9 @@
         height: 100%;
         width: auto;
         @include fc;
-        justify-content: center;
+        padding-top: 100px;
         font-family: $fontPrincipal;
         background-color: #eee;
-        z-index: 1;
         .section__container {
             @include fr;
             justify-content: space-evenly;
@@ -347,13 +346,18 @@
 
 .footer {/* FOOTER GLOBAL*/
     grid-area: footer;
-    background-color: #eee;
-    background-image: url(../img/wave.svg);
-    background-size: cover;
+    background-color: #363738;
+    /* background-image: url(../img/background-footer.svg);
+    background-size: cover; */
+    -webkit-mask-image: url("../img/background-footer.svg");
+    mask-image: url("../img/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
     width: 100%;
-    margin-top: -75px;
+    z-index: 2;
+    margin-top: -125px;
     &-container {
-        padding-top: 150px;
+        padding-top: 100px;
         .footer__contenedor {
             display: flex;
             flex-wrap: wrap;
