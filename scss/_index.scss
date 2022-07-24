@@ -12,7 +12,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 650px auto 650px auto;
     font-family: $fontPrincipal;  
-    
+
     main {/* MAIN */
         grid-area: main;
         background-color: white;
@@ -189,6 +189,24 @@
     }
 }
 
+.wsticky {/* Whatsapp FIXED GLOBAL */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    width: 70px;
+    height: auto;
+    margin: 45px;
+    background-color: rgb(213, 144, 15);
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+.wsticky:hover {
+    bottom: 5px;
+    transition: all 300ms;
+}
+
 .header {/* HEADER GLOBAL*/
     grid-area: header;
     background: linear-gradient(90deg, rgb(213, 144, 15), rgb(213, 152, 21), rgb(201, 136, 16));
@@ -199,7 +217,7 @@
     height: 100%;
     width: 100%;
     z-index: 99;
-    
+
     &__nav {
         @include fr;
         margin: auto;
