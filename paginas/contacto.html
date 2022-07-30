@@ -62,18 +62,18 @@
 		<section class="section__contacto">
 			<div class="contacto__container animate__animated animate__backInDown">
                 <h1>Contacte a SS</h1>
-                <form class="form">
+                <form action="form.php" method="post" class="form">
                     <img src="https://cdn-icons-png.flaticon.com/512/95/95645.png">
                     <div class="form-email">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" name="email">
                     </div>
                     <div class="form-mensaje">
                         <label class="form-label">Mensaje</label>
-                        <textarea class="form-control"></textarea>
+                        <textarea class="form-control" name="textarea"></textarea>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" name="connected" class="check">
+                        <input type="checkbox" name="check" class="check">
                         <label for="connected" class="check">Recibir más información sobre nosotros</label>
                     </div>
                     <div class="form-enviar">
