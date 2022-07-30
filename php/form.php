@@ -14,5 +14,5 @@ $mensaje .= "Enviado el " . date("d/m/Y", time());
 
 mail($para, $asunto, utf8_decode($mensaje));
 echo "<script>alert('Correo enviado exitosamente')</script>";
-echo "<script> setTimeout(\"location.href='../paginas/contacto.html'\",2000)</script>";
+echo "<script> setTimeout(\"location.href='../paginas/contacto.html'\",1000)</script>";
 ?>
