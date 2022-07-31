@@ -793,10 +793,10 @@
   .grid-container .section .section__container__producto .section__img {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .grid-container .section .section__container__producto .section__img li {
-    width: 200px;
+    width: 250px;
     height: 390px;
   }
   .grid-container .section .section__container__producto .section__img li .a-producto {
