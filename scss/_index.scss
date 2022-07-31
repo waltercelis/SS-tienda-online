@@ -224,6 +224,13 @@
         height: 100%;
         width: 100%;
         justify-content: space-between;
+        .nav__icono--responsive {
+            display: none;
+            img {
+                width: 50px;
+                height: auto;
+            }
+        }
         .nav__icon {
             font-size: 35px;
             color: black;

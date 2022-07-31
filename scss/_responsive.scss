@@ -144,24 +144,32 @@
         .header__nav {
             flex-direction: column;
             height: 101%;
-            .nav__icon {
+            .nav__icono--responsive {
                 display: flex;
-                margin: 0 50px;
+                position: absolute;
+                height: 100px;
+                padding: 0 0 0 50px;
                 flex-direction: column;
-                justify-content: end;
-                height: 58px;
-                width: 100%;
+                justify-content: center;
+                img {
+                    width: 65px;
+                }
+            }
+            .nav__icon {
+                font-size: 45px;
+                display: flex;
+                height: 60px;
             }
             #label__check {
                 display: block;
+                margin-left: auto;
+                padding: 19px 75px 0 0;
             }
-            #nav__check:checked ~ .nav__icono {
-                margin-top: 1rem;
-                height: 100%;
-                visibility: visible;
-                opacity: 1;
+            #nav__check {
+                display: none;
             }
             #nav__check:checked ~ .nav__menu {
+                margin-top: 2rem;
                 height: 100%;
                 visibility: visible;
                 opacity: 1;
@@ -177,14 +185,14 @@
                 height: 0px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all 650ms ease;
+                transition: all 550ms ease;
             }
             .nav__menu {
                 flex-direction: column;
                 height: 0px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all 650ms ease;
+                transition: all 550ms ease;
                 ul {
                     flex-direction: column;
                     align-items: flex-start;
@@ -199,7 +207,7 @@
                         }
                         ul {
                             width: 130px;
-                            top: 175px;
+                            top: 125px;
                             li {
                                 margin-left: -3.2rem;
                                 width: 150%;
@@ -216,7 +224,7 @@
                         }
                     }
                     li:hover ul{
-                        top: 170px;
+                        top: 135px;
                     }
                 }
                 .nav__form {
@@ -234,7 +242,7 @@
                 height: 0px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all 650ms ease;
+                transition: all 550ms ease;
             }
         }
     }
@@ -243,13 +251,6 @@
         margin-top: -100px;
         .footer-container {
             padding-top: 100px;
-            .footer__contenedor {
-                .box__footer {
-                    .logo img {
-                        width: 50px;
-                    }
-                }
-            }
         }
     }
 
@@ -454,24 +455,28 @@
         .header__nav {
             flex-direction: column;
             height: 101%;
+            .nav__icono--responsive {
+                display: flex;
+                position: absolute;
+                height: 75px;
+                padding: 0 0 0 50px;
+                flex-direction: column;
+                justify-content: center;
+            }
             .nav__icon {
                 display: flex;
-                margin: 0 50px;
-                flex-direction: column;
-                justify-content: end;
-                height: 58px;
-                width: 100%;
+                height: 35px;
             }
             #label__check {
                 display: block;
+                margin-left: auto;
+                padding: 19px 75px 0 0;
             }
-            #nav__check:checked ~ .nav__icono {
-                margin-top: 1rem;
-                height: 100%;
-                visibility: visible;
-                opacity: 1;
+            #nav__check {
+                display: none;
             }
             #nav__check:checked ~ .nav__menu {
+                margin-top: 2rem;
                 height: 100%;
                 visibility: visible;
                 opacity: 1;
@@ -487,14 +492,14 @@
                 height: 0px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all 650ms ease;
+                transition: all 550ms ease;
             }
             .nav__menu {
                 flex-direction: column;
                 height: 0px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all 650ms ease;
+                transition: all 550ms ease;
                 ul {
                     flex-direction: column;
                     align-items: flex-start;
@@ -509,7 +514,7 @@
                         }
                         ul {
                             width: 130px;
-                            top: 175px;
+                            top: 100px;
                             li {
                                 margin-left: -3.2rem;
                                 width: 150%;
@@ -526,7 +531,7 @@
                         }
                     }
                     li:hover ul{
-                        top: 170px;
+                        top: 110px;
                     }
                 }
                 .nav__form {
@@ -544,7 +549,7 @@
                 height: 0px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all 650ms ease;
+                transition: all 550ms ease;
             }
         }
     }
