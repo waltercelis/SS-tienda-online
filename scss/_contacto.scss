@@ -15,14 +15,14 @@
         @include fc;
         justify-content: center;
         align-items: center;
-        height: 200vh;
+        height: 150vh;
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         background: linear-gradient(135deg, rgb(255, 238, 205), rgb(35, 28, 13));
         .contacto__container {
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+            background-color: #fcfaf7;
+            border-radius: 45px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .7);
             h1 {
                 padding: 0 30px;
                 text-align: center;
@@ -114,6 +114,7 @@
     .footerC {
         @extend .footer;
         background-color: rgba(54, 55, 56, 1);
+        margin-top: -5px;
         .box__footer--cajas {
             @extend .box__footer--caja;
             background-color: #363738 !important;

@@ -22,7 +22,6 @@
     }
 
     .header {
-        height: 102%;
         .header__nav {
             .nav__icono {
                 margin: 0 -25px;
@@ -34,8 +33,12 @@
     }
 
     .footer {
+        height: 110%;
         .footer-container {
             margin-left: -25px;
+            .box__footer--caja {
+                margin-left: -25px;
+            }
         }
     }
 }
@@ -304,7 +307,7 @@
         grid-template-rows: auto auto auto;
         font-size: 13px;
         .section__sesion {
-            height: 150vh !important;
+            height: 100vh !important;
         }
     }
 
@@ -313,6 +316,7 @@
         grid-template-rows: auto auto auto;
         font-size: 13px;
         .section__contacto {
+            height: 100vh !important;
             .contacto__container {
                 .form {
                     .form-mensaje {
@@ -662,8 +666,7 @@
         grid-template-rows: auto auto auto;
         font-size: 11px;
         .section__sesion {
-            height: 150vh !important;
-            margin-top: -200px !important;
+            height: 100vh !important;
         }
     }
 
@@ -672,7 +675,7 @@
         grid-template-rows: auto auto auto;
         font-size: 11px;
         .section__contacto {
-            margin-top: -200px !important;
+            height: 100vh !important;
             .contacto__container {
                 .form {
                     .form-mensaje {
