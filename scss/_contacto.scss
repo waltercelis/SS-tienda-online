@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: center;
         height: 200vh;
-        margin-top: -150px;
+        /* margin-top: -150px; */
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
         background: linear-gradient(135deg, rgb(255, 238, 205), rgb(35, 28, 13));
@@ -114,7 +114,11 @@
     }
     .footerC {
         @extend .footer;
-        background-color: #363738;
-        margin-top: -220px;
+        background-color: rgba(54, 55, 56, 1);
+        /* margin-top: -220px; */
+        .box__footer--cajas {
+            @extend .box__footer--caja;
+            background-color: #363738 !important;
+        }
     }
 }

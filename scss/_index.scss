@@ -10,7 +10,7 @@
     "section2"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto 650px auto 650px auto;
+    grid-template-rows: auto 650px auto 530px auto;
     font-family: $fontPrincipal;  
 
     main {/* MAIN */
@@ -157,7 +157,7 @@
         @include fc;
         padding-top: 100px;
         font-family: $fontPrincipal;
-        background-color: #eee;
+        background-color: rgba(238, 238, 238, .3);
         .section__container {
             @include fr;
             justify-content: space-evenly;
@@ -194,22 +194,22 @@
     bottom: 0;
     right: 0;
     z-index: 999;
-    width: 60px;
+    width: 53px;
     height: auto;
     margin: 30px 45px;
     background-color: rgb(213, 144, 15);
     border-radius: 50%;
     padding: 13px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .05);
 }
 .wsticky:hover {
-    bottom: 5px;
-    transition: all 300ms;
+    bottom: 2px;
+    transition: all 100ms;
 }
 
 .header {/* HEADER GLOBAL*/
     grid-area: header;
-    background: linear-gradient(90deg, rgb(213, 144, 15), rgb(213, 152, 21), rgb(201, 136, 16));
+    background: linear-gradient(90deg, rgb(211, 143, 18), rgb(239, 168, 12), rgb(186, 125, 12));
     @include fr;
     justify-content: space-between;
     position: sticky;
@@ -252,7 +252,7 @@
         }
         .nav__icono {
             img {
-                width: 65px;
+                width: 58px;
                 height: auto;
                 margin: 10px 50px;
             }
@@ -368,29 +368,40 @@
 }
 
 .footer {/* FOOTER GLOBAL*/
+    /* #363738 */
     grid-area: footer;
-    background-color: #363738;
+    background-color: rgba(54, 55, 56, .9);
     /* background-image: url(../img/background-footer.svg);
     background-size: cover; */
-    -webkit-mask-image: url("../img/background-footer.svg");
+    /* -webkit-mask-image: url("../img/background-footer.svg");
     mask-image: url("../img/background-footer.svg");
     -webkit-mask-size: cover;
-    mask-size: cover;
+    mask-size: cover; */
     width: 100%;
     z-index: 2;
-    margin-top: -125px;
+    /* margin-top: -125px; */
     &-container {
-        padding-top: 100px;
+        /* padding-top: 100px; */
         .footer__contenedor {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin: auto;
+            .box__footer--caja {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                background-color: #4a4b4d;
+                opacity: 1;
+                transform: rotate(45deg);
+                left: 29px;
+            }
             .box__footer {
                 @include fc;
                 padding: 50px;
+                z-index: 1;
                 .logo img {
-                    width: 65px;
+                    width: 58px;
                 }
                 .parrafo {
                     max-width: 400px;

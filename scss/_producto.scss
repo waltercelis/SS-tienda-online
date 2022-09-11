@@ -14,7 +14,7 @@
     .grid__contenedor__producto {
         grid-area: section__producto;
         height: 100%;
-        padding-bottom: 200px;
+        padding-bottom: 50px;
         h1 {
             font-size: 2.5rem;
         }
@@ -182,6 +182,6 @@
     
     .footerP {
         @extend .footer;
-        background-color: #363738;
+        background-color: rgba(54, 55, 56, .9);
     }
 }

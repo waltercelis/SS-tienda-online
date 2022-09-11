@@ -35,9 +35,9 @@
     }
     .section__ubicacion2 {
         grid-area: section__ubicacion2;
-        background-color: #efefef;
+        background-color: rgba(238, 238, 238, .3);
         height: 100%;
-        padding-bottom: 150px;
+        padding-bottom: 80px;
         .ubicacion2-container {
             width: 100%;
             @include fr;

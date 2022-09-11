@@ -1,18 +1,17 @@
 /* RESPONSIVE */
 @media only screen and (min-width: 2000px) {
-    .footer {
-        margin-top: -200px;
-        &-container {
-            padding-top: 170px;
-        }
+    .header{
+        height: 102%;
     }
 }
 @media only screen and (min-width: 1500px) and (max-width: 1999px) {
-    .footer {
-        margin-top: -150px;
-        &-container {
-            padding-top: 170px;
-        }
+    .header{
+        height: 102%;
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1499px) {
+    .header{
+        height: 102%;
     }
 }
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
@@ -23,6 +22,7 @@
     }
 
     .header {
+        height: 102%;
         .header__nav {
             .nav__icono {
                 margin: 0 -25px;
@@ -34,7 +34,6 @@
     }
 
     .footer {
-        margin-top: -100px;
         .footer-container {
             margin-left: -25px;
         }
@@ -148,17 +147,17 @@
                 display: flex;
                 position: absolute;
                 height: 100px;
-                padding: 0 0 0 50px;
+                padding: 0 0 10px 50px;
                 flex-direction: column;
                 justify-content: center;
                 img {
-                    width: 65px;
+                    width: 56px;
                 }
             }
             .nav__icon {
                 font-size: 45px;
                 display: flex;
-                height: 60px;
+                height: 50px;
             }
             #label__check {
                 display: block;
@@ -244,13 +243,6 @@
                 visibility: hidden;
                 transition: all 550ms ease;
             }
-        }
-    }
-
-    .footer {
-        margin-top: -100px;
-        .footer-container {
-            padding-top: 100px;
         }
     }
 
@@ -555,9 +547,8 @@
     }
 
     .footer {
-        margin-top: -100px;
+        margin-top: -3px;
         .footer-container {
-            padding-top: 100px;
             .footer__contenedor {
                 .box__footer {
                     .logo img {
