@@ -411,15 +411,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-}
-.footer-container .footer__contenedor .box__footer--caja, .footer-container .footer__contenedor .grid-container__contacto .footerC .box__footer--cajas, .grid-container__contacto .footerC .footer-container .footer__contenedor .box__footer--cajas, .footer-container .footer__contenedor .grid-container__sesion .footerS .box__footer--cajas, .grid-container__sesion .footerS .footer-container .footer__contenedor .box__footer--cajas {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background-color: #4a4b4d;
-  opacity: 1;
-  transform: rotate(45deg);
-  left: 29px;
+  /* .box__footer--caja {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      background-color: #4a4b4d;
+      opacity: 1;
+      transform: rotate(45deg);
+      left: 29px;
+  } */
 }
 .footer-container .footer__contenedor .box__footer {
   display: flex;
@@ -564,7 +564,7 @@
   .grid-container .section2 {
     display: flex;
     flex-direction: column;
-    padding: 50px 0 120px;
+    padding: 50px 0 80px;
   }
   .grid-container .section2 .section__container {
     display: flex;
@@ -827,7 +827,7 @@
   .grid-container .section2 {
     display: flex;
     flex-direction: column;
-    padding: 50px 0 150px;
+    padding: 50px 0 80px;
   }
   .grid-container .section2 .section2 .section__container .section__boxmodel2 .section__boxmodel2__p {
     text-align: center;
@@ -971,9 +971,6 @@
     opacity: 0;
     visibility: hidden;
     transition: all 550ms ease;
-  }
-  .footer, .grid-container__contacto .footerC, .grid-container__sesion .footerS, .grid-container__producto .footerP {
-    margin-top: -3px;
   }
   .footer .footer-container .footer__contenedor .box__footer .logo img, .grid-container__contacto .footerC .footer-container .footer__contenedor .box__footer .logo img, .grid-container__sesion .footerS .footer-container .footer__contenedor .box__footer .logo img, .grid-container__producto .footerP .footer-container .footer__contenedor .box__footer .logo img {
     width: 50px;

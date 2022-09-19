@@ -96,7 +96,7 @@
         .section2 {
             display: flex;
             flex-direction: column;
-            padding: 50px 0 120px;
+            padding: 50px 0 80px;
             .section__container {
                 display: flex;
                 flex-direction: column;
@@ -399,7 +399,7 @@
         .section2 {
             display: flex;
             flex-direction: column;
-            padding: 50px 0 150px;
+            padding: 50px 0 80px;
             .section2 .section__container .section__boxmodel2 .section__boxmodel2__p {
                 text-align: center;
             }
@@ -551,7 +551,6 @@
     }
 
     .footer {
-        margin-top: -3px;
         .footer-container {
             .footer__contenedor {
                 .box__footer {

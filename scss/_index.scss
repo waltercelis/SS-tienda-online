@@ -385,7 +385,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             margin: auto;
-            .box__footer--caja {
+            /* .box__footer--caja {
                 width: 100px;
                 height: 100px;
                 position: absolute;
@@ -393,7 +393,7 @@
                 opacity: 1;
                 transform: rotate(45deg);
                 left: 29px;
-            }
+            } */
             .box__footer {
                 @include fc;
                 padding: 50px;
